@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-reboot.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-reboot.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.bundle.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.bundle.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/jquery.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" afterPath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,9 +21,23 @@
       <file leaf-file-name="bootsPractise.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webPractise/html/bootsPractise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="325">
+              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webPractise/js/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="10363" column="4" lean-forward="false" selection-start-line="10363" selection-start-column="4" selection-end-line="10363" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,20 +52,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/webPractise/js/jquery.js" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootsPractise.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -77,9 +78,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="702" />
-    <option name="y" value="274" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="729" />
+    <option name="y" value="116" />
     <option name="width" value="902" />
     <option name="height" value="850" />
   </component>
@@ -109,6 +110,33 @@
               <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRepository" type="462c0819:PsiDirectoryNode" />
               <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootStrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootStrap" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,18 +183,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529049320119</updated>
-      <workItem from="1529049321337" duration="3480000" />
+      <workItem from="1529049321337" duration="4808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3480000" />
+    <option name="totallyTimeSpent" value="4808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="729" y="116" width="902" height="850" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16649105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36574075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -220,6 +248,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="10363" column="4" lean-forward="false" selection-start-line="10363" selection-start-column="4" selection-end-line="10363" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -238,9 +276,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webPractise/html/bootsPractise.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="325">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
