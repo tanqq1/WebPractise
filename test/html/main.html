@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue 熟悉测试</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <style>
+        body{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <p>{{message}}</p>
+    <span v-bind:title="title">将鼠标悬浮在我上面可以看到页面的加载时间哦</span>
+   <div> <input v-model="message" /></div>
+    <div><button @click="show">{{message}}</button></div>
+    <ul>
+        <li v-for="s in list">
+            {{s.data}}
+        </li>
+    </ul>
+    <div style="background-color:slategray">在vue中注册组件<b>何为组件？相当于一个标签，使用注册的组件的名字就可以包含注册的内容</b></div>
+
+    <p>父组件与子组件之间数据的传递：prop && event</p>
+    <todo-list></todo-list>
+</div>
+
+<script>
+
+    //注册组件
+    Vue.component('todo-list',{
+        template: '<P>组件内容呀</P>'
+    })
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'hello Vue!',
+            title: '页面加载日期是：'+ new Date().toLocaleString(),
+            seen: 'true',
+            list: [
+                {data: '数据一'},
+                {data: '数据二'},
+                {data: '数据三'}
+                ]
+        },
+        methods: {
+            show: function(){
+                this.message = "我们不一样"
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>
