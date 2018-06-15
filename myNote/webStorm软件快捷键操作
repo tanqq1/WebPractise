@@ -1,0 +1,70 @@
+webStorm软件快捷键操作
+
+1、撤销                 ctrl+z
+2、重做                 ctrl+shift+z
+3、复制文件路径          ctrl+shift+c   
+
+
+查找/替换
+ctrl+shift+N             通过文件名快速查找工程内的文件
+ctrl+shift+alt+N         通过一个字符快速查找位置
+查找                     ctrl+F
+查找下一个                F3    ctrl+L
+查找前一个                shift+F3    ctrl+shift+L
+在路径中查找              ctrl+shift+f
+在路径中替换              ctrl+shift+R
+
+
+复制一行                 ctrl+D
+删除一行                 ctrl+y
+加入一行                 ctrl+shift+J
+
+
+缩进                     tab
+取消缩进                 shift +tab
+代码格式化               ctrl+alt+L
+新建一个文件或其他        alt+insert
+重新开始一行             shift +enter(回车)-----无论光标在哪个位置
+补全代码                 ctrl+shift +enter       
+
+
+导航
+esc                   进入代码编辑区
+alt+F1                查找代码在其他界面模块的位置
+ctrl+G                到指定行的代码
+ctrl+】/[              光标到代码块的前面或者后面
+alt +up/down          上一个/下一个方法
+
+界面操作 
+
+ctrl+shift+A           快速查找并使用编辑器所有功能
+ctrl+shift+ F12        最大区域显示代码
+alt+ <-/->             切换代码选项卡 
+ctrl+F4                关闭当前代码选项卡
+ctrl+W                 选中单词、选中代码块
+alt+shift+F            将当前文件加入收藏夹
+
+
+运行
+shift+F10              run 运行
+shift+F9               Debug修补漏洞
+ctrl+shift+X           运行命令行
+
+
+debugging快捷键
+F8               不进入函数
+F7               单步执行
+shift+F7         智能单步执行
+shift+F8         跳出
+Alt+F9           运行到光标处
+Alt+F8           评估表达
+F9               重新开始程序
+ctrl+F8          切换断点
+ctrl+shift+F8    查看断点
+
+
+
+
+
+
+

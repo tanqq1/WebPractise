@@ -1,0 +1,22 @@
+node.js初步了解
+
+1、运行在服务端的javascript
+   
+   1.1  npm    node.js包管理工具
+
+       1.1.1  npm包安装分为本地安装和全局安装
+
+       				npm install express         本地安装
+       				本地安装的文件
+       				npm install express -g      全局安装
+
+      包的package.json    位于模块的目录下，用于定义包的属性。。
+
+      1.1.2   卸载模块   npm uninstall express
+
+      1.1.3   更新模块   npm  update  express
+
+      1.1.4   搜索模块    npm search  express
+
+
+

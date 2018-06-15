@@ -1,0 +1,21 @@
+Git 操作指令
+
+git init  初始化仓库（将会生成一个.git文件，用来监控文件的变更）
+git add   将要上传的文件添加到仓库
+git commit -m ""  把项目添加到仓库
+git remote add origin https://github.com/tanqq1/WebPractise.git   与远程仓库创建连接（在这里采用的是https方式）
+git push -u origin master   将项目上传到远程仓库（如果出错，按下面的方式进行执行）
+
+1、git pull origin master    将远程仓库的文件下载到本地仓库（保持远程和本地数据的一致性才可提交）
+2、 git push origin master   
+
+
+
+删除远程仓库中的文件
+
+1、在本地将想要删除的文件删除
+2、编辑命令： git commit -a -m "A file was deleted"
+3、提交   git push
+
+Question
+git commit -a -m "aa"与git commit -m "aa"的区别
