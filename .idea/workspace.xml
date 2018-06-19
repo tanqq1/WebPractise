@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/myNote/bootstrap学习笔记" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/assist.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/button.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/code.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/form.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/table.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a5.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/myNote/Git 操作指令" afterPath="$PROJECT_DIR$/myNote/Git 操作指令" />
-      <change beforePath="$PROJECT_DIR$/myNote/node.js初步了解" afterPath="$PROJECT_DIR$/myNote/node.js初步了解" />
-      <change beforePath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css" />
-      <change beforePath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" afterPath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" />
-      <change beforePath="$PROJECT_DIR$/webPractise/html/main2.html" afterPath="$PROJECT_DIR$/webPractise/html/main2.html" />
+      <change beforePath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,27 +28,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bootsPractise.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webPractise/html/bootsPractise.html">
+      <file leaf-file-name="bootsPractise.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            <state relative-caret-position="450">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="34" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css">
+      <file leaf-file-name="button.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/button.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="618" column="67" lean-forward="false" selection-start-line="618" selection-start-column="59" selection-end-line="618" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/assist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +89,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,6 +100,7 @@
       <find>.img</find>
       <find>table-re</find>
       <find>table-responsive</find>
+      <find>img-rounded</find>
       <find>col-md-5</find>
     </findStrings>
   </component>
@@ -88,6 +115,13 @@
         <option value="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css" />
         <option value="$PROJECT_DIR$/myNote/bootstrap学习笔记" />
         <option value="$PROJECT_DIR$/webPractise/html/bootsPractise.html" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/table.html" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/code.html" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/form.html" />
+        <option value="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/button.html" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html" />
+        <option value="$PROJECT_DIR$/webPractise/html/bootstrap/assist.html" />
       </list>
     </option>
   </component>
@@ -141,34 +175,20 @@
               <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRepository" type="462c0819:PsiDirectoryNode" />
               <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootStrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootStrap" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-grid.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRepository" type="462c0819:PsiDirectoryNode" />
               <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,9 +201,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myRepository\webPractise\html\bootstrap" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myRepository\webPractise\img" />
       <recent name="D:\myRepository\webPractise\css\bootStrap" />
       <recent name="D:\myRepository\webPractise\js\bootStrape" />
     </key>
@@ -214,12 +239,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529049320119</updated>
       <workItem from="1529049321337" duration="5348000" />
-      <workItem from="1529370248661" duration="9335000" />
+      <workItem from="1529370248661" duration="19994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14683000" />
+    <option name="totallyTimeSpent" value="25342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -255,15 +280,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webPractise/html/bootsPractise.html">
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -349,26 +373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="5" column="24084" lean-forward="false" selection-start-line="5" selection-start-column="24076" selection-end-line="5" selection-end-column="24084" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap-grid.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="79" column="311" lean-forward="false" selection-start-line="79" selection-start-column="311" selection-end-line="79" selection-end-column="311" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="618" column="67" lean-forward="false" selection-start-line="618" selection-start-column="59" selection-end-line="618" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -381,15 +389,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/html/bootsPractise.html">
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/code.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="100">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="e#447#451#0" expanded="false" />
+            <element signature="e#455#459#0" expanded="false" />
+            <element signature="e#461#465#0" expanded="false" />
+            <element signature="e#468#472#0" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#536#540#0" expanded="true" />
+            <element signature="e#545#549#0" expanded="true" />
+            <element signature="e#601#605#0" expanded="true" />
+            <element signature="e#610#614#0" expanded="true" />
+            <element signature="e#710#714#0" expanded="true" />
+            <element signature="e#719#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#457#461#0" expanded="true" />
+            <element signature="e#465#469#0" expanded="true" />
+            <element signature="e#521#525#0" expanded="true" />
+            <element signature="e#528#532#0" expanded="true" />
+            <element signature="e#563#567#0" expanded="true" />
+            <element signature="e#572#576#0" expanded="true" />
+            <element signature="e#577#581#0" expanded="true" />
+            <element signature="e#589#593#0" expanded="true" />
+            <element signature="e#596#600#0" expanded="true" />
+            <element signature="e#606#610#0" expanded="true" />
+            <element signature="e#659#663#0" expanded="true" />
+            <element signature="e#687#691#0" expanded="true" />
+            <element signature="e#702#706#0" expanded="true" />
+            <element signature="e#727#731#0" expanded="true" />
+            <element signature="e#746#750#0" expanded="true" />
+            <element signature="e#778#782#0" expanded="true" />
+            <element signature="e#800#804#0" expanded="true" />
+            <element signature="e#831#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/js/bootStrape/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="4" column="15936" lean-forward="false" selection-start-line="4" selection-start-column="15925" selection-end-line="4" selection-end-column="15936" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="618" column="67" lean-forward="false" selection-start-line="618" selection-start-column="59" selection-end-line="618" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/assist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

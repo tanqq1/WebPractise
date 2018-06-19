@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>bootstrap表单的样式</title>
+
+    <link rel="stylesheet" href="../../css/bootStrap/bootstrap.min.css">
+    <script src="../../js/bootStrape/bootstrap.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+<a href="bootsPractise.html">返回</a>
+<hr />
+<p>如何使用bootstrap创建表单</p>
+<div>
+    向父 &lt;form&gt; 元素添加 role="form"。 把标签和控件放在一个带有 class .form-group 的 &lt;div&gt; 中。
+    这是获取最佳间距所必需的. 向所有的文本元素 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 添加 class ="form-control" 。
+</div>
+<hr />
+内联表单   &lt;form class="form-inline"&gt;<br/>
+隐藏标签名&lt;lable class="sr-only"&gt;
+<hr />
+水平表单   &lt;form class="form-horizontal"&gt;<br/>
+lable添加class&lt;lable class="control-lable"&gt;
+<hr />
+表单控件：checkbox、input、textarea、radio、select
+<hr/>
+提供表单功能： 表单控件大小、表单控件状态（focus、success...）、静态控件（不可更改）、表单帮助文本
+<hr/>
+<form class="role">
+    <div class="form-group">
+        <lable for="name">名称</lable>
+        <input type="text" class="form-control" id="name" placeholder="请输入名称"/>
+    </div>
+    <div class="form-group">
+        <lable for="inputfile">输入文件</lable>
+        <input type="file" id="inputfile"/>
+        <p>这里是块级帮助文本的实例</p>
+    </div>
+    <div class="form-group">
+        <lable>
+            <input type="checkbox"/>请打勾
+        </lable>
+    </div>
+    <button type="submit" class="btn btn-default">提交</button>
+</form>
+<hr />
+</body>
+</html>

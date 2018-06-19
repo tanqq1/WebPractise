@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap表格的样式</title>
+
+    <link rel="stylesheet" href="../../css/bootStrap/bootstrap.min.css">
+    <script src="../../js/bootStrape/bootstrap.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+</head>
+<body>
+<a href="bootsPractise.html">返回</a>
+
+    <p style="background-color: #80bdff">bootstrap中表格样式主要有几个类来控制</p>
+    <p>用在table标签下的样式有:::::</p>
+    <p> .table------为任意 &lt;table&gt; 添加基本样式 (只有横向分隔线)::::</p>
+    <p> .table-striped 	在 &lt;tbody&gt; 内添加斑马线形式的条纹::::::</p>
+    <p>.table-bordered  	为所有表格的单元格添加边框::::::</p>
+    <p> .table-hover  在 &lt;tbody&gt;内的任一行启用鼠标悬停状态::::</p>
+    <p>.table-condensed  让表格更加紧凑</p>
+<hr />
+<p>用在tr、th、td标签上的类</p>
+<p>.active-----	将悬停的颜色应用在行或者单元格上</p>
+<p>.info-------表示信息变化的操作</p>
+<p>.warning----警告<p>
+<p>.success----成功</p>
+<p>.danger----危险的操作</p>
+<hr />
+<p>响应式表格</p>
+将.table标签放在.table-responsive标签里。。可以适应设备大小不同的设备
+<hr />
+<div class="table-responsive">
+   <table class="table">
+       <caption>数据</caption>
+       <thead>
+       <tr>
+           <th>城市</th>
+           <th>特色</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+           <td>桂林</td>
+           <td>山水</td>
+       </tr>
+       <tr>
+           <td>哈尔滨</td>
+           <td>冰城</td>
+       </tr>
+       </tbody>
+   </table>
+</div>
+<hr />
+
+</body>
+</html>
