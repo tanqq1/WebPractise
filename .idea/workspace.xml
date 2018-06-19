@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/assist.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/button.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/code.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/table.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/img/a5.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" afterPath="$PROJECT_DIR$/webPractise/css/bootStrap/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/webPractise/html/bootsPractise.html" afterPath="$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html" />
-    </list>
+    <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -239,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1529049320119</updated>
       <workItem from="1529049321337" duration="5348000" />
-      <workItem from="1529370248661" duration="19994000" />
+      <workItem from="1529370248661" duration="20142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25342000" />
+    <option name="totallyTimeSpent" value="25490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
