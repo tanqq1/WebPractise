@@ -4,19 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Bootstarp Test</title>
-
     <link rel="stylesheet" href="../css/bootStrap/bootstrap.min.css"/>
+
     <script src="../js/bootStrape/bootstrap.min.js"></script>
     <script src="../js/jquery.js"></script>
 </head>
 <body>
-    <div style="padding: 100px 100px 10px">
-        <form class="bs-example">
-            <div>
-                <span></span>
-                <input />
-            </div>
-        </form>
+
+<h1>Hello world!</h1>
+<div style="padding: 100px 100px 10px">
+    <form class="bs-example">
+        <div>
+            <span></span>
+            <input/>
+        </div>
+    </form>
+</div>
+
+<p>网格的练习。。网格必须包含在容器中</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="background-color: #dedef8; box-shadow: inset 1px -1px 4px #444;">
+            <p>网格有由行组成。。每一行又可以由多个列组成，最多12个列，不管列的组成方式是什么，其总和得是12 </p>
+            <p>行有类.row表明。在该类的标签下继续div即为列，列的组成方式有列.col-md-n表明</p>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-8" style="background-color: #dedef8; box-shadow: inset 1px -1px  4px #444, inset -1px 1px 4px #444;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo.</p>
+        </div>
+        <div class="col-sm-6 col-md-9 col-lg-4" style="background-color: #dedef8; box-shadow: inset 1px -1px  4px #444, inset -1px 1px 4px #444;">
+            <p>this is the important things</p>
+            <p>and this is the best</p>
+        </div>
+    </div>
+</div>
+
+<p>排版的练习</p>
+<div>
+
+    <h1>我是h1标签 <small>我是small标签，我是父标签的85%</small> </h1>
+    <h1>我是标题1 h1. <small>我是副标题1 h1</small></h1>
+    <p class="text-success">success 字体。。绿色字体</p>
+    <p class="text-warning">警告字样的字体</p>
+    <p class="text-danger">危险字样的字体</p>
+    <p class="text-right">后对齐啦</p>
+
+    <abbr title="world wild web">www(abbr标签悬停即可查看我的总称)</abbr>
+
+    <br /><strong>Some Company, Inc.</strong><br>
+    007 street<br>
+    Some City, State XXXXX<br>
+    <abbr title="Phone">P:</abbr> (123) 456-7890
+    <p>使用address标签在网页上显示练习信息</p>
+    <address>
+        <strong>Some Company, Inc.</strong><br>
+        007 street<br>
+        Some City, State XXXXX<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+</div>
 </body>
 </html>
