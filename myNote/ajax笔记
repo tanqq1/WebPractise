@@ -39,3 +39,10 @@ XMLHttpRequest的属responseText（字符串形式）、responseXML（Xml数据�
  		   -------4：请求已完成，且响应已就绪
 status-----200: "OK"
       -----404: "未找到页面"
+
+
+xmlhttp.onreadystatechange = function(){
+	if(xmlhttp.readyState==4 && xmlhttp.status==200){
+		document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+	}
+}
