@@ -5,6 +5,7 @@
     <title>常见问题</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../js/jquery.js"></script>
     <style>
         .div_first {
             padding: 25px 15px;
@@ -27,31 +28,35 @@
     </style>
 </head>
 <body>
-<div id="problem">
 
-    <h1>hello World!</h1>
-    <div class="div_first">
-        <div class="div_second"><span style="color: #FF9E00;">问</span>：&nbsp;办理粮食收购资格行政许可是否需要收费？</div>
-        <div class="div_third">答：&nbsp;不收费</div>
-    </div>
-    <div class="div_first">
-        <div class="div_second"><span style="color: #FF9E00;">问</span>：&nbsp;粮食收购资格许可办理时限为几个工作日？</div>
-        <div class="div_third">答：&nbsp;粮食收购资格许可法定办理时限为15个工作日，按照“行政许可提速工程”的要求，承诺办理时限为5个工作日。</div>
-    </div>
-    <div class="div_first">
-        <div class="div_second"><span style="color: #FF9E00;">问</span>：&nbsp;是否可以委托他人办理?</div>
-        <div class="div_third">答：&nbsp;可以，带好双方的证件原件或复印件及授权委托书。</div>
-    </div>
-    <div class="div_first">
-        <div class="div_second"><span style="color: #FF9E00;">问</span>：&nbsp;办理粮食收购资格许可需要上门办理几次？</div>
-        <div class="div_third">答：&nbsp;我局办理粮食收购资格许可实现“不跑路是原则，跑一次是例外”。申请人可登陆“浙江政务服务网”进行在线申请办理，《行政许可决定书...</div>
-    </div>
-    <div class="div_first">
-        <div class="div_second"><span style="color: #FF9E00;">问</span>：&nbsp;办理粮食收购资格许可需要上门办理几次？</div>
-        <div class="div_third">A：&nbsp;我局办理粮食收购资格许可实现“不跑路是原则，跑一次是例外”。申请人可登陆“浙江政务服务网”进行在线申请办理，
-            《行政许可决定书》和《粮食收购资格许可证》实行快递送达。
-        </div>
-    </div>
-</div>
+<div>{{arr}}</div>
+
+<script>
+    var str = "women,people,test,hahha:shing,moment";
+    var data = "我们:你好;他们:再见;联系电话:1234567-7898;";
+    var arr = str.split(",",7);
+    var ind = str.indexOf("men,");
+    //替换操作
+    var rep = str.replace("men","MEN");
+    var rep1 = str.replace(/men/g,"MEN");
+    //charAt()
+    var char = str.charAt(5);
+    //字符串连接
+    var conc = str.concat("::::hahha");
+
+    //我的练习
+    var daaRp =  data.replace(/:/g,";");
+    var daa = daaRp.split(";");
+
+    console.log(arr);
+    console.log(ind);
+    console.log(rep);
+    console.log(rep1);
+    console.log(char);
+    console.log(conc);
+    console.log(daa);
+
+</script>
+
 </body>
 </html>
