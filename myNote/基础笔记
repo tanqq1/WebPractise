@@ -27,7 +27,7 @@ var str = "women,people,test,hahha:shing,moment";
 6、字符串切割： slice()
 
 
-通过字符串来截取字段，如果字符串最后一个字符为符号的话--->存在问题获取到的数组将会得到一个空字段的数据。。那么该怎么忽略掉最后一个符号？
+通过字符串来截取字段，如果字符串最后一个字符为符号的话---存在问题获取到的数组将会得到一个空字段的数据。。那么该怎么忽略掉最后一个符号？
 例如：var data = "我们:你好;他们:再见;联系电话:1234567-7898;";
 
 一个字符串中既有分号也有冒号，通过符号截取函数split()来截取。。。
@@ -38,11 +38,10 @@ var str = "women,people,test,hahha:shing,moment";
     var daa = daaRp.split(";");
 
 
-<------->JSON.stringify()
-<------->将数据值转换为json字符串
+-------JSON.stringify()
+-------将数据值转换为json字符串
 
 
-不知道该干点什么了。。。biubiubiubiu
 vue框架的学习以及项目的实现。。。直接用所学技术知识用到在journey项目上。。journey项目的重新构造。。定位功能保留
 
 
@@ -51,12 +50,12 @@ $line: 21px;
 $attr: border;
 
 #{}-----可以在选择器或者属性名中使用变量
-div.#{$attr}: 20px red;------->div.border : 20px red;
+div.#{$attr}: 20px red;-------div.border : 20px red;
 p {
-    line-height: #{$line}----->line-height: 21px;
+    line-height: #{$line}-----line-height: 21px;
 }
 
-@import   ----->允许导入其他路径的sass文件。。只有在改文件名后缀为.sass时才能导入成功，否则就作为普通的css语句
+@import   -----允许导入其他路径的sass文件。。只有在改文件名后缀为.sass时才能导入成功，否则就作为普通的css语句
 
 
 如果需要导入scss或者sass文件，但是不希望将其编译为css，只需要在文件名前添加下划线
