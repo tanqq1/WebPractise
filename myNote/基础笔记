@@ -36,3 +36,31 @@ var str = "women,people,test,hahha:shing,moment";
     var daaRp =  data.replace(/:/g,";");
     -------最后对剩余的那个字符进行截取
     var daa = daaRp.split(";");
+
+
+<------->JSON.stringify()
+<------->将数据值转换为json字符串
+
+
+不知道该干点什么了。。。biubiubiubiu
+vue框架的学习以及项目的实现。。。直接用所学技术知识用到在journey项目上。。journey项目的重新构造。。定位功能保留
+
+
+sass使用$来定义变量
+$line: 21px;
+$attr: border;
+
+#{}-----可以在选择器或者属性名中使用变量
+div.#{$attr}: 20px red;------->div.border : 20px red;
+p {
+    line-height: #{$line}----->line-height: 21px;
+}
+
+@import   ----->允许导入其他路径的sass文件。。只有在改文件名后缀为.sass时才能导入成功，否则就作为普通的css语句
+
+
+如果需要导入scss或者sass文件，但是不希望将其编译为css，只需要在文件名前添加下划线
+
+@extend   
+		-----将重复的样式延伸给需要包含给这个样式的特殊样式
+
