@@ -24,7 +24,10 @@
         #box li.first{position:relative;}
         #box li.first,#box li.first img{width:156px;height:156px;}
         #box li.first div{position:absolute;top:0;left:0;width:156px;height:156px;display:none;opacity:0.5;filter:alpha(opacity=50);background:#fff url(img/loading.gif) 50% 50% no-repeat;}
-
+        span {
+            width: 60px;
+            height: 60px;
+        }
     </style>
     <script>
        window.onload = function(){
@@ -94,6 +97,15 @@
         <li> <a href="javascript:void(0)"><img src="../img/a6.jpg"/></a></li>
         <li> <a href="javascript:void(0)"><img src="../img/a7.jpg" class="current"/></a></li>
     </ul>
+</div>
+
+<div style="max-width: 100%;overflow-x: auto; height: 60px;">
+    <span style="width: 30px;"><img src="../img/a1.jpg" style="width:20%;"/></span>
+    <span><img src="../img/a2.jpg" style="width:20%;"/></span>
+    <span><img src="../img/a4.jpg" style="width:20%;"/></span>
+    <span><img src="../img/a5.jpg" style="width:20%;"/></span>
+    <span><img src="../img/a6.jpg" style="width:20%;"/></span>
+    <span><img src="../img/a7.jpg" style="width:20%;"/></span>
 </div>
 </body>
 </html>

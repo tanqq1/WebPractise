@@ -15,7 +15,7 @@ git push -u origin master   将项目上传到远程仓库（如果出错，按�
 
 1、在本地将想要删除的文件删除
 2、编辑命令： git commit -a -m "A file was deleted"
-3、提交   git push
+3、提交   git push  //////git push --set-upstream origin master
 
 Question
 git commit -a -m "aa"与git commit -m "aa"的区别
@@ -26,7 +26,7 @@ git commit -a -m "aa"与git commit -m "aa"的区别
 
 2）Changes to be committed → 文件已缓存，这是下次提交的内容；
 
-3）Changes bu not updated → 文件被修改，但并没有添加到缓存区。
+3）Changes but not updated → 文件被修改，但并没有添加到缓存区。
 
 git commit -m ""  只会提交添加到缓存区的文件（只提交添加的）
 
