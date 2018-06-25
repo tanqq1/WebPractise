@@ -68,3 +68,26 @@ p {
 ------
 journey项目中的图片条功能的改进homepage.html文件navi6下
 怎么使用vue.js来绑定图片的路径，使用v-for 来显示图片。。需要注意的是显示的图片是有限的，要想显示其他的图片可以通过点击更多按钮来查看
+
+
+
+css中的单位vh和vw指的是：
+vh-----viewport  height -----视窗宽度   1vh==1%的视窗高度
+vw-----viewport  width ------视窗高度   1vw==1%的视窗宽度
+
+
+javascript的选择器
+
+子选择器
+E1>E2{}
+子对象选择器--第N个元素
+选择器：first-child{}
+
+选择器：nth-child(n)
+	  p:nth-child(n)----匹配器父元素下的第n个p -----(下标从1开始)
+	  p:nth-child(odd)----奇数p-----(下标从1开始)
+	  p:nth-child(even)---偶数p
+
+	  p:nth-of-type(n)------选择器匹配属于父元素的特定类型的第N个子元素的每个元素
+
+vue中的特殊属性   :key的使用
