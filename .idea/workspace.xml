@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webPractise/js/vue.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/myNote/基础笔记" afterPath="$PROJECT_DIR$/myNote/基础笔记" />
-      <change beforePath="$PROJECT_DIR$/webPractise/html/main2.html" afterPath="$PROJECT_DIR$/webPractise/html/main2.html" />
-      <change beforePath="$PROJECT_DIR$/webPractise/html/pinglun.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html" afterPath="$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +34,8 @@
       <file leaf-file-name="基础笔记" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-781">
-              <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state relative-caret-position="519">
+              <caret line="249" column="0" lean-forward="true" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,9 +44,18 @@
       <file leaf-file-name="vue_LifeCycle_test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1670">
-              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="775">
+              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <element signature="e#901#1210#0" expanded="false" />
+                <element signature="e#1240#1548#0" expanded="false" />
+                <element signature="e#1582#1926#0" expanded="false" />
+                <element signature="e#1956#2296#0" expanded="false" />
+                <element signature="e#2397#2721#0" expanded="false" />
+                <element signature="e#2752#3072#0" expanded="false" />
+                <element signature="e#3170#3495#0" expanded="false" />
+                <element signature="e#3528#3849#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +124,7 @@
         <option value="$PROJECT_DIR$/webPractise/html/main2.html" />
         <option value="$PROJECT_DIR$/webPractise/html/pinglun.html" />
         <option value="$PROJECT_DIR$/webPractise/js/vue.js" />
+        <option value="$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html" />
         <option value="$PROJECT_DIR$/myNote/基础笔记" />
       </list>
     </option>
@@ -227,12 +233,12 @@
       <workItem from="1529632286429" duration="16497000" />
       <workItem from="1529656143591" duration="4298000" />
       <workItem from="1529911728450" duration="6024000" />
-      <workItem from="1529974721735" duration="17668000" />
+      <workItem from="1529974721735" duration="21358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94619000" />
+    <option name="totallyTimeSpent" value="98309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -300,7 +306,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -611,24 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/html/huanfu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2650">
-          <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#span#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myNote/webStorm软件快捷键操作">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -693,19 +683,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/huanfu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-781">
-          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state relative-caret-position="519">
+          <caret line="249" column="0" lean-forward="true" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1670">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="775">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#901#1210#0" expanded="false" />
+            <element signature="e#1240#1548#0" expanded="false" />
+            <element signature="e#1582#1926#0" expanded="false" />
+            <element signature="e#1956#2296#0" expanded="false" />
+            <element signature="e#2397#2721#0" expanded="false" />
+            <element signature="e#2752#3072#0" expanded="false" />
+            <element signature="e#3170#3495#0" expanded="false" />
+            <element signature="e#3528#3849#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

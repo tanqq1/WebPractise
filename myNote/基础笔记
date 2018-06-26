@@ -237,6 +237,15 @@ vue指令
 
 组件传值
 
+这里有关网址： https://blog.csdn.net/qq_35430000/article/details/79291287
+    父子组件之间的传值主要为prop、event
+    组件之间传值的方式有
+
+        1、通过路由待参数进行传值
+        2、通过sessionStorage缓存的形式 来进行数据传递
+        3、父组件像子组件传值： props
+        4、子组件像父组件传值： emit
+
 
 
 |-------bootstrap js框架的特点

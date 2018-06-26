@@ -11,14 +11,25 @@
 <div id="app">
     <h1>{{message + "这是在outerHtml里的内容"}}</h1>
     <p>现在的时间是{{date}}</p>
+
+    //局部注册的组件
+    <my-first></my-first>
 </div>
+
+
 </body>
 <script>
+    var Child = {
+        template: "<div>看看我的显示啦</div>"
+    }
     var vm = new Vue({
         el: '#app',
         data: {
             message: 'Vue的生命周期',
             date: new Date()
+        },
+        components: {
+            'my-first': Child
         },
 
         /*如果想测试一下template和el的优先级，可以在el下增加template选项
