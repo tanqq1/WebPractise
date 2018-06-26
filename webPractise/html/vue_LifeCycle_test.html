@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue生命周期学习</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>{{message + "这是在outerHtml里的内容"}}</h1>
+    <p>现在的时间是{{date}}</p>
+</div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'Vue的生命周期',
+            date: new Date()
+        },
+
+        /*如果想测试一下template和el的优先级，可以在el下增加template选项
+        * el: '#app',
+        * template: '<div>{{message + “hhaha”}}</div>'
+        * */
+        beforeCreate: function() {
+            console.group('------beforeCreate创建前状态------');
+            console.log("%c%s", "color:red" , "el     : " + this.$el); //undefined
+            console.log("%c%s", "color:red","data   : " + this.$data); //undefined
+            console.log("%c%s", "color:red","message: " + this.message)
+        },
+        created: function() {
+            console.group('------created创建完毕状态------');
+            console.log("%c%s", "color:red","el     : " + this.$el); //undefined
+            console.log("%c%s", "color:red","data   : " + this.$data); //已被初始化
+            console.log("%c%s", "color:red","message: " + this.message); //已被初始化
+        },
+        beforeMount: function() {
+            console.group('------beforeMount挂载前状态------');
+            console.log("%c%s", "color:red","el     : " + (this.$el)); //已被初始化
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data); //已被初始化
+            console.log("%c%s", "color:red","message: " + this.message); //已被初始化
+        },
+        mounted: function() {
+            console.group('------mounted 挂载结束状态------');
+            console.log("%c%s", "color:red","el     : " + this.$el); //已被初始化
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data); //已被初始化
+            console.log("%c%s", "color:red","message: " + this.message); //已被初始化
+        },
+        /*如果想看到update函数的执行，可以在console下执行代码：vm.meaasge = "更新数据"*/
+        beforeUpdate: function () {
+            console.group('beforeUpdate 更新前状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el);
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data);
+            console.log("%c%s", "color:red","message: " + this.message);
+        },
+        updated: function () {
+            console.group('updated 更新完成状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el);
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data);
+            console.log("%c%s", "color:red","message: " + this.message);
+        },
+       /* 如果想看到destroy的效果，可以在console控制台输入命令： vm.$destroy()*/
+        beforeDestroy: function () {
+            console.group('beforeDestroy 销毁前状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el);
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data);
+            console.log("%c%s", "color:red","message: " + this.message);
+        },
+        destroyed: function () {
+            console.group('destroyed 销毁完成状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el);
+            console.log(this.$el);
+            console.log("%c%s", "color:red","data   : " + this.$data);
+            console.log("%c%s", "color:red","message: " + this.message)
+        }
+    });
+
+    /*vm.$destroy();*/
+</script>
+</html>

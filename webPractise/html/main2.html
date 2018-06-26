@@ -29,11 +29,14 @@
 </head>
 <body>
 
-<div>{{arr}}</div>
+<div>have a look</div>
 
 <script>
-    var str = "women,people,test,hahha:shing,moment";
+    var str = "women,people,test,hahha:shing,pest,moment";
+    var test = /[tp]est/g;
     var data = "我们:你好;他们:再见;联系电话:1234567-7898;";
+    var aa = test.exec(str)
+    console.log("test:" + aa)
     var arr = str.split(",",7);
     var ind = str.indexOf("men,");
     //替换操作
