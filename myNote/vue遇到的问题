@@ -1,0 +1,24 @@
+
+
+
+<div id="rotial">
+  <h1>挂载到底是怎么一回事呀</h1>
+</div>
+
+    //创建构造器
+/*    var rotial = Vue.extend({
+        template: "<p>这是:{{firstname}}-{{lastName}}使用vue.extend()定义的一个子组件，看看效果如何..{{alias}}耶</p>",
+        data: function(){
+            return {
+                firstName: "tan",
+                lastName: "qingqing",
+                alias: "tqq"
+            }
+        }
+    });
+    //创建实例，并将内容挂载到元素上
+   new rotial().$mount("#rotial")*/
+  --------结果显示为
+  --------<p>这是:-qingqing使用vue.extend()定义的一个子组件，看看效果如何..tqq耶</p>
+  --------他的挂载对象<div id="rotial"><h1>挂载到底是怎么一回事呀</h1></div>被完全替换掉了。。。
+   ????????在这里使用挂载函数时，为什么挂载的内容直接替换掉了被挂载对象???????

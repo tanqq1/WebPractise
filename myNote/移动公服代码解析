@@ -1,0 +1,68 @@
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import zhLocale from 'element-ui/lib/locale/lang/zh-CN'
+import '@/styles/app/index.scss' // global css
+import '@/iconfont/iconfont.css'
+import App from './App.vue'
+import router from '@/router/approuter'
+import '@/utils/permission' // permission control
+import echarts from 'echarts'
+import filters from '@/utils/filters'
+import 'babel-polyfill'
+
+======================================
+for (let key in filters) {
+  Vue.filter(key, filters[key])
+}
+
+=====================================
+==================================
+       定义一个v-clickoutside的指令
+
+Vue.directive('clickoutside', {
+  bind(el, binding, vnode) {
+    function documentHandler(e) {
+      // 这里判断点击的元素是否是本身，是本身，则返回
+      if (el.contains(e.target)) {
+        return false
+      }
+      // 判断指令中是否绑定了函数
+      if (binding.expression) {
+        // 如果绑定了函数 则调用那个函数，此处binding.value就是handleClose方法
+        binding.value(e)
+      }
+    }
+    // 给当前元素绑定个私有变量，方便在unbind中可以解除事件监听
+    el.__vueClickOutside__ = documentHandler
+    document.addEventListener('click', documentHandler)
+  },
+  update() {},
+  unbind(el, binding) {
+    // 解除事件监听
+    document.removeEventListener('click', el.__vueClickOutside__)
+    delete el.__vueClickOutside__
+  }
+})
+=======================================================================
+Vue.prototype.$echarts = echarts
+    添加实例方法
+    Vue.prototype引入插件,并使用
+========================================================
+    通过全局方法Vue.use()使用插件，并且传入参数
+Vue.use(ElementUI, {
+  zhLocale
+})
+==================================
+Vue.config.productionTip = false
+设置为 false 以阻止 vue 在启动时生成生产提示
+
+================================
+new Vue({
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: {
+    App
+  }
+})
