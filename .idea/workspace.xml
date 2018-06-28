@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/myNote/基础笔记" afterPath="$PROJECT_DIR$/myNote/基础笔记" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="移动公服代码解析" pinned="false" current-in-tab="true">
+      <file leaf-file-name="移动公服代码解析" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+            <state relative-caret-position="375">
+              <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="基础笔记" pinned="false" current-in-tab="false">
+      <file leaf-file-name="基础笔记" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="744">
-              <caret line="302" column="0" lean-forward="true" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+              <caret line="302" column="8" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="302" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -121,11 +120,11 @@
         <option value="$PROJECT_DIR$/myNote/webStorm软件快捷键操作" />
         <option value="$PROJECT_DIR$/myNote/vue学习中的问题" />
         <option value="$PROJECT_DIR$/myNote/vue遇到的问题" />
-        <option value="$PROJECT_DIR$/myNote/移动公服代码解析" />
         <option value="$PROJECT_DIR$/webPractise/html/vuePractise.html" />
         <option value="$PROJECT_DIR$/myNote/vue笔记" />
-        <option value="$PROJECT_DIR$/myNote/基础笔记" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/myNote/移动公服代码解析" />
+        <option value="$PROJECT_DIR$/myNote/基础笔记" />
       </list>
     </option>
   </component>
@@ -184,13 +183,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\myRepository\webPractise\html\bootstrap" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\myRepository\webPractise\img" />
       <recent name="D:\myRepository\webPractise\css\bootStrap" />
       <recent name="D:\myRepository\webPractise\js\bootStrape" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myRepository\webPractise\html\bootstrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,12 +228,12 @@
       <workItem from="1529911728450" duration="6024000" />
       <workItem from="1529974721735" duration="23860000" />
       <workItem from="1530061138972" duration="23027000" />
-      <workItem from="1530147397145" duration="10734000" />
+      <workItem from="1530147397145" duration="12203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134572000" />
+    <option name="totallyTimeSpent" value="136041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -653,18 +652,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
+    <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="302" column="0" lean-forward="true" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
+    <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+        <state relative-caret-position="744">
+          <caret line="302" column="8" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="302" selection-end-column="8" />
           <folding />
         </state>
       </provider>
