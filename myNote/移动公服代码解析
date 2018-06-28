@@ -49,7 +49,7 @@ Vue.prototype.$echarts = echarts
     添加实例方法
     Vue.prototype引入插件,并使用
 ========================================================
-    通过全局方法Vue.use()使用插件，并且传入参数
+通过全局方法Vue.use()使用插件，并且传入参数
 Vue.use(ElementUI, {
   zhLocale
 })
@@ -66,3 +66,4 @@ new Vue({
     App
   }
 })
+

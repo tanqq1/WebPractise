@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b0fee4-6eb6-4ca6-bb88-72b529118263" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/myNote/vue遇到的问题" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/myNote/移动公服代码解析" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/myNote/vue笔记" afterPath="$PROJECT_DIR$/myNote/vue笔记" />
       <change beforePath="$PROJECT_DIR$/myNote/基础笔记" afterPath="$PROJECT_DIR$/myNote/基础笔记" />
+      <change beforePath="$PROJECT_DIR$/myNote/移动公服代码解析" afterPath="$PROJECT_DIR$/myNote/移动公服代码解析" />
       <change beforePath="$PROJECT_DIR$/webPractise/html/vuePractise.html" afterPath="$PROJECT_DIR$/webPractise/html/vuePractise.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,18 +23,8 @@
       <file leaf-file-name="bootsPractise.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="1800">
               <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="基础笔记" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1994">
-              <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,8 +33,8 @@
       <file leaf-file-name="移动公服代码解析" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="669">
+              <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -54,18 +43,28 @@
       <file leaf-file-name="vuePractise.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webPractise/html/vuePractise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="675">
+              <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue笔记" pinned="false" current-in-tab="true">
+      <file leaf-file-name="基础笔记" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue笔记" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myNote/vue笔记">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1594">
-              <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="3825">
+              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,12 +121,12 @@
         <option value="$PROJECT_DIR$/webPractise/html/vue_LifeCycle_test.html" />
         <option value="$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html" />
         <option value="$PROJECT_DIR$/myNote/webStorm软件快捷键操作" />
-        <option value="$PROJECT_DIR$/myNote/基础笔记" />
         <option value="$PROJECT_DIR$/myNote/vue学习中的问题" />
         <option value="$PROJECT_DIR$/myNote/vue遇到的问题" />
-        <option value="$PROJECT_DIR$/myNote/移动公服代码解析" />
-        <option value="$PROJECT_DIR$/webPractise/html/vuePractise.html" />
         <option value="$PROJECT_DIR$/myNote/vue笔记" />
+        <option value="$PROJECT_DIR$/myNote/移动公服代码解析" />
+        <option value="$PROJECT_DIR$/myNote/基础笔记" />
+        <option value="$PROJECT_DIR$/webPractise/html/vuePractise.html" />
       </list>
     </option>
   </component>
@@ -158,6 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,30 +171,10 @@
               <item name="myRepository" type="462c0819:PsiDirectoryNode" />
               <item name="myNote" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRepository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRepository" type="462c0819:PsiDirectoryNode" />
-              <item name="webPractise" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,12 +229,13 @@
       <workItem from="1529656143591" duration="4298000" />
       <workItem from="1529911728450" duration="6024000" />
       <workItem from="1529974721735" duration="23860000" />
-      <workItem from="1530061138972" duration="16827000" />
+      <workItem from="1530061138972" duration="23027000" />
+      <workItem from="1530147397145" duration="8448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117638000" />
+    <option name="totallyTimeSpent" value="132286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -573,9 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,10 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2330">
           <caret line="9737" column="47" lean-forward="true" selection-start-line="9737" selection-start-column="47" selection-end-line="9737" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <marker date="1529992091443" expanded="true" signature="261689:261698" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,14 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/assist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -640,27 +607,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myNote/vue学习中的问题">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myNote/vue学习中的问题" />
     <entry file="file://$PROJECT_DIR$/myNote/vue遇到的问题">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,15 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
           <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1994">
-          <caret line="214" column="0" lean-forward="false" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,31 +626,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="79" column="60" lean-forward="true" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
-          <folding>
-            <element signature="e#901#1210#0" expanded="false" />
-            <element signature="e#1240#1548#0" expanded="false" />
-            <element signature="e#1582#1926#0" expanded="false" />
-            <element signature="e#1956#2296#0" expanded="false" />
-            <element signature="e#2397#2721#0" expanded="false" />
-            <element signature="e#2752#3072#0" expanded="false" />
-            <element signature="e#3170#3495#0" expanded="false" />
-            <element signature="e#3528#3849#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webPractise/html/vuePractise.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myNote/vue笔记">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1594">
-          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="3825">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myNote/移动公服代码解析">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/bootstrap/bootsPractise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webPractise/html/vuePractise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myNote/基础笔记">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
           <folding />
         </state>
       </provider>

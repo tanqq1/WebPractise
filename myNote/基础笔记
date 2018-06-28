@@ -75,6 +75,49 @@ css中的单位vh和vw指的是：
 vh-----viewport  height -----视窗宽度   1vh==1%的视窗高度
 vw-----viewport  width ------视窗高度   1vw==1%的视窗宽度
 
+//2018/6/28 周四
+css中的单位
+em-------相当于当前字体尺寸的大小
+2em-------当前字体尺寸的两倍大小
+-----------在 CSS 中，em 是非常有用的单位，因为它可以自动适应用户所使用的字体。
+
+ex-------相当于当前字体尺寸的一半（x-height）
+
+css选择器
+p:first-child（相对于父元素的第一个子元素）
+----------相对于其父元素下第一个p,无论位置在哪。。每个父元素下的第一个p（父元素不包括body）
+
+p:first-of-type(该类型相对于父元素是第一个)
+---------选择属于其父元素的首个 <p> 类型元素的每个 <p> 元素.
+
+:first-child与first-of-type的差别在于：
+    -------前者要求不仅是符合条件的元素，还得是父元素的第一个子元素。此外，其父元素不包含<body>
+    ------后者不要求必须是父元素的第一个子元素，只要该类型相对于父元素而言是第一个就可以了。<body>下的第一个该类型的元素也符合条件
+
+========下标从1开始========
+:after    在该元素之后插入内容========
+                                     ||-----配合content属性来设定插入的内容.....p:after{content: "我们"}
+:before   在该元素之后插入内容========
+:first-line   在该元素的第一行
+:first-letter  在该元素的第一个单词
+:last-of-type:  与first-of-type类似。。类型相对于父元素而言是最后一个该类型的元素
+:only-of-type:   父元素下该类型的元素是唯一的一个元素，即父元素下只有一个该类型的子元素
+p:only-child:   选择属于其父元素的唯一子元素的每个 <p> 元素。
+p:nth-child(n)   父元素下的第n个元素且是p的所有p元素
+p:nth-last-child(n)   与nth-child(n)类似，只是从最后一个元素开始计数
+p:nth-of-type(n)    选择属于其父元素第二个 <p> 元素的每个 <p> 元素。
+p:nth-last-of-type(n)     同上。只是从最后一个元素开始计数
+p:last-child   选择属于其父元素最后一个子元素每个 <p> 元素。
+
+div>p           选择父元素为 <div> 元素的所有 <p> 元素。
+div p       	选择 <div> 元素内部的所有 <p> 元素
+div+p           选择紧接在 <div> 元素之后的所有 <p> 元素
+
+列表的样式设置
+list-style
+      ------list-style-image(将图像设置为列表标记) list-style-image: url()
+      -----list-style-position(设置列表标记的位置)  inside/outside/inherit
+      ------list-style-type(设置列表项标记的类型)  disc/circle/decimal/.....
 
 javascript的选择器
 
@@ -83,8 +126,7 @@ E1>E2{}
 子对象选择器--第N个元素
 选择器：first-child{}
 
-选择器：nth-child(n)
-	  p:nth-child(n)----匹配器父元素下的第n个p -----(下标从1开始)
+选择器：
 	  p:nth-child(odd)----奇数p-----(下标从1开始)
 	  p:nth-child(even)---偶数p
 
@@ -210,23 +252,52 @@ HTML文件头里的meta标签
                 ------自动刷新并指向某个页面
             Set-Cookie
                 --------cookie设定
+             X-UA-Compatible
+                ---------针对IE浏览器设定的
+                ---------<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+Vue插件之element-ui
+关于插件中响应式布局的理解：
+    不同的样式可以根据页面的大小来决定是否显示
+    比如响应式样式中很多都是xs、sm、md、lg、lx这样的样式，设置了xs样式的元素，只有在界面大小极小的情况下才会显示该元素，
+    当界面增大时，不满足该样式的显示要求的时候，该样式的元素将不会再显示。
+
+Layout布局
+    <el-row>
+       <el-col></el-col>
+    </el-row>
+
+container容器
+    <el-container>----外层容器
+    <el-header>-------顶栏容器
+    <el-aside>--------侧边栏容器
+    <el-main>---------主要区域容器
+    <el-footer>-------底栏容器
+
+Icon图标
+    <i class="el-icon-edit"></i>
+Button
+    通过tyep..plain..round..circle等属性来设置其样式
+    <el-button></el-button>
+Radio
+    radio的使用需要用v-model进行绑定，以表示他是否被选中
+    <el-radio></el-radio>
+    <el-radio-group>
+Checkbox多选框
+    使用v-model绑定变量
+    <el-checkbox v-model="checked">备选项</el-checkbox>
+    <el-checkbox>
+input
+    <el-input>
+inpputNumber
+    <el-input-number>
+select  选择器
+    <el-select>
 
 
 
 
-
-
-
-
-
-
-
-关于vue是一个单页面的说法----是通过路由来实现多页面吗
-
-|-------bootstrap js框架的特点
-|
-|
-|-------jquery js框架的特点
 
 
 

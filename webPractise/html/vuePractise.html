@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"
     <title>vue 熟悉测试</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -13,9 +14,59 @@
             background-color: #ffe8a1;
             border: #eea236 solid 2px
         }
+        /*p:first-child {
+            color: red;
+            font-size: 2em;
+        }
+        p:first-of-type {
+            color: blue;
+            font-size: 2em;
+        }
+        span:first-of-type {
+            color: blue;
+            font-size: 2em;
+        }*/
+
+       /* p:only-child {
+            background-color: red;
+        }*/
+        /*p:nth-child(2) {
+            color: red;
+        }*/
+        div>p {
+            color: pink;
+        }
+        /*div+p {
+            color: #ff0099;
+        }*/
+        /*div p{
+            color: pink;
+        }*/
     </style>
 </head>
 <body>
+<!--:first-child伪标签的含义-->
+<!--<p>父元素下的第一个p</p>
+    <div>kk
+        <p>第一个p</p>
+        <p>2</p>
+        <div>
+            <p>div下的p</p>
+            <span>在div父元素下,我是第一个span类型的子元素</span>
+        </div>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div>
+    <div><p>第二组中的第一个p</p></div>-->
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <span><p>3</p></span>
+    </div>
+
+
 
 <div id="app">
     <p>{{message}}</p>
