@@ -3,3 +3,302 @@
 vue路由的操作： this.$route.query.dif-----dif为路由中传过来的字段名
 
 
+VUE的生命周期钩子
+
+|--beforecreate
+|---------------在这个生命周期内,进行初始化时间，进行数据的监测。在created的时候数据已经和data属性进行了绑定
+|---------------此时没有进行DOM的挂载
+|--create
+|---------------在这个生命周期的过程中，首先会判断是否有el选项，如果有，则往下编译。其中el就是挂载的dom节点
+|---------------如果没有，则直到vue实例调用vm.$mount(el)，否则生命周期将停止。。
+|---------------接下来看是否有template选项，如果有，就将template作为一个模板编译成一个render函数；
+|---------------如果没有，就将el的外部html内容作为一个template。。。。可见，template的优先级较高
+|===============在vue中还有一个render函数，以createElement作为参数，然后做渲染操作
+|--beforeMount
+|---------------vue实例对象添加$el成员，并且替换掉挂载在的DOM对象.这时候只是用{{message}}、{{data}}来进行占位，并没有替换成相应的数据
+|--Mount
+|---------------这个生命周期里，将{{message}}、{{data}}替换成相应的渲染数据
+|--beforeUpdate
+|=============
+|--Update
+|
+|--activated
+|=================keep-alive组件激活时调用
+|----deactivated
+|----------------keep-alive组件停用时调用
+|--beforeDestroy
+|--Destroy
+|---------------在调用vm.$destroy()之后，实例被销毁，但是dom和属性方法等还依旧存在，只是改变他们讲不会生效。。
+|----errorCaptured
+
+
+父子组件的生命周期(暂时不做深入了解，等有进一步学习以后再仔细研究)
+        参考网址：  https://segmentfault.com/a/1190000014705819
+        1、仅当子组件完成挂载后，父组件才会挂载
+        2、当子组件完成挂载后，父组件会主动执行一次beforeUpdate/update钩子函数（仅首次）
+        3、父子组件在data变化时是分别监控的，但是在更新prop中的数据是关联的
+        4、销毁父组件时，先将子组件销毁后才会销毁父组件
+
+兄弟组件之间的生命周期
+       1、初始化销毁等互相不干扰。
+       2、挂载是从上到下依次进行的。
+
+
+vue指令
+        v-model指令： 实现表单输入与应用状态之间的双向绑定
+        v-model     表单控件双向绑定
+                    限于
+                    -----<input>
+                    -----<select>
+                    -----<textarea>
+        v-on
+
+自定义指令
+        有时候我们需要实现现有指令无法实现的功能，这时我们就可以通过自定义指令来实现功能
+        全局注册
+                //注册一个全局自定义指令， 'v-focus'
+                Vue.directive('focus',{
+                //当被绑定的元素插入到DOM 中时
+                inserted: function(el){
+                //聚焦元素
+                    el.focus()
+                }
+                })
+        局部注册
+            如果想注册局部指令，组件中也接受一个directives的选项
+            directives: {
+                focus: {
+                    //指令的定义
+                    inserted: function(el) {
+                        el.focus()
+                    }
+                }
+            }
+        之后，就可以在模板的任何元素上使用新的v-focus指令
+        <input v-focus />
+
+    指令钩子函数：
+        bind
+        inserted
+        update
+        componentUpdated
+        unbind
+    钩子函数参数
+    message: "hello"
+        el-----------指令所绑定的元素，可以直接操作DOM
+        binding------一个对象，包含下面几个属性
+            name---------指令名，不包括"v-"前缀
+            value--------指令的绑定值.....hello
+            oldValue
+            expression------指令的绑定字符串.....message
+            arg-------------传给指令的参数
+            modifiers-------一个包含修饰符的对象
+        vnode--------vue编译生成的虚拟节点
+        oldVnode-----上一个虚拟节点，仅在update和componentUpdate钩子中使用
+
+                Vue.directive('color-swatch', function (el, binding) {
+                  el.style.backgroundColor = binding.value
+                })
+
+
+组件传值
+
+这里有关网址： https://blog.csdn.net/qq_35430000/article/details/79291287
+    父子组件之间的传值主要为prop、event
+    组件之间传值的方式有
+
+        1、通过路由待参数进行传值
+        2、通过sessionStorage缓存的形式 来进行数据传递
+        3、父组件像子组件传值： props
+        4、子组件像父组件传值： emit
+
+全局API
+	Vue.extend(options)
+		----使用构造器创建一个子类，参数是一个包含组件选项的对象。其中不同于组件的是data必须是一个函数
+
+
+		<div id="rotal">
+		    <h1>
+		</div>
+
+        //创建构造器
+        var rotial = Vue.extend({
+            template: "<p>这是:{{firstname}}-{{lastName}}使用vue.extend()定义的一个子组件，看看效果如何..{{alias}}耶</p>",
+            data: function(){
+                return {
+                    firstName: "tan",
+                    lastName: "qingqing",
+                    alias: "tqq"
+                }
+            }
+        });
+        //创建实例，并将内容挂载到元素上
+       new rotial().$mount("#rotal")
+
+
+    Vue.nextTick([callback,context])
+        延迟回调函数，在DOM更新后执行该函数，获取更新后的DOM
+        参数:
+            callback-----function
+            context------object
+
+    Vue.set(target,key,value)
+        -----向响应式对象中添加一个属性值
+    Vue.directive(id,[definition])
+        -------获取或者注册一个组件
+    Vue.fliter(id,[definition])
+        -------注册或者获取一个全局过滤器
+    Vue.component(id,[definition])
+        -------注册或者获取一个全局组件
+        -----Vue.component("my-component",Vue.extend({}));
+    Vue.use(pluins)
+        -------安装一个vue.js插件
+    Vue.mixin(mixin)
+        -------全局注册一个混入（全局混入）？？
+    Vue.version()
+        ---------获取vue的版本。。这样我们就可以根据不同的版本号，采取不同的方式
+    Vue.compile(template)
+        ------在render函数中编译字符串????
+
+
+    选项/数据
+
+<router-view>是最顶层的出口，渲染最高级路由匹配到的组件。。同样的，一个被渲染组件 同样可以包含自己的嵌套<router-view>要在嵌套的出口中渲染组件，需要在VueRouter的参数中使用children配置
+
+const User = {
+  template: `
+    <div class="user">
+      <h2>User {{ $route.params.id }}</h2>
+      <router-view></router-view>
+    </div>
+  `
+}
+.................
+const router = new VueRouter({
+  routes: [
+    { path: '/user/:id', component: User,
+      children: [
+        {
+          // 当 /user/:id/profile 匹配成功，
+          // UserProfile 会被渲染在 User 的 <router-view> 中
+          path: 'profile',
+          component: UserProfile
+        },
+        {
+          // 当 /user/:id/posts 匹配成功
+          // UserPosts 会被渲染在 User 的 <router-view> 中
+          path: 'posts',
+          component: UserPosts
+        }
+      ]
+    }
+  ]
+})
+
+
+编程式的导航
+    除了使用<router-link>创建a标签来定义导航链接，还可以借助router的实例方法，通过编写代码来实现
+
+router.push(location,onComplete?,onAbort?)
+        -----------该函数的参数可以是一个字符串的参数，也可以是一个描述地址的对象
+        -----------这里的回调onComplete和onAbort是可选参数，他们会在导航成功完成或终止时执行
+
+        -----------userId: 123
+        -----------router.push('home')
+        -----------router.push({'home',params: {userId}})     /home/123
+        -----------router.push({name: 'home',params: {userId: 123}})
+        -----------//如果有路径，提供的params会被忽略
+        -----------// 这里的 params 不生效
+        -----------router.push({ path: '/user', params: { userId }}) // -> /user
+        -----------//带查询参数。。。/register?plan=private
+        -----------router.push({ path: 'register', query: { plan: 'private' }})
+
+        -----------const userId = 123
+        -----------router.push({ name: 'user', params: { userId }}) // -> /user/123
+
+
+router.replace(location,oncomplated?,onAbort?)
+                使用当前地址将history中的地址替换掉
+
+router.go(n)
+        -------该函数的参数是一个整数。意思是在history记录中前进或后退对少步
+
+命名路由：
+也就是路由设置中的name属性
+
+命名视图
+    多个路由不采取嵌套显示。而是平级显示，并通过name属性来显示..，没有name属性则是默认路由
+    <router-view ></router-view>
+    <router-view name='b '></router-view>
+    <router-view name='c '></router-view>
+
+    var router = new VueRouter({
+        routers: [{
+            path: '/',
+            components: {
+                default: Foo,
+                a: Bar,
+                b: Boz
+            }
+        }]
+    })
+
+重定向和别名
+redirect
+alias
+
+vue多页面之间怎么进行联系。。。
+
+多页面开发相关配置介绍的百度网址：  https://jingyan.baidu.com/article/67662997998a9654d51b8487.html
+
+    一般我们的vue项目都是单页面的，其实因为vue在工程化开发的时候依赖了webpack，webpack帮我们将所有的资源整合到
+一起而形成一个单页面。那么当我们要实现多页面的开发时就需要对webpack配置进行修改，本例主要是对webpack进行修改的介绍。。
+
+        创建一个文件夹src\page,文件夹下一般包括.vue  .js  .html
+        修改build\webpack.base.conf.js目录下，在module.exports中，找到entry，添加多个入口js
+        对开发环境----------run dev里进行修改，打开\build\webpack.dev.conf.js文件，找到plugins,添加如下配置
+        new HtmlWebpackPlugin({
+                filename: 'one.html',
+                template: 'src/pages/one/one.html',
+                inject: true,
+                chunks: ['one']
+            })
+       对run build也就是---------------编译环境进行配置。打开\config\index.js文件，在build里加入：
+       ------one: path.resolve(__dirname, '../dist/one.html')
+       配置生产环境----------打开/build/webpack.prod.conf.js文件，找到plugins，添加如下配置
+       new HtmlWebpackPlugin({
+               filename: config.build.one,
+               template: 'one.html',
+               inject: true,
+               minify: {
+                   removeComments: true,
+                   collapseWhitespace: true,
+                   removeAttributeQuotes: true
+               },
+               chunksSortMode: 'dependency',
+               chunks: ['manifest', 'vendor', 'one']
+           }),
+       filename引用的是\config\index.js里的build，每个页面都要配置一个chunks，不然会加载所有页面的资源。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

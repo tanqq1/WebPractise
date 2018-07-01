@@ -2,18 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"
     <title>vue 熟悉测试</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
     <style>
         body{
             font-size: 15px;
         }
+        #rotal {
+            background-color: #ffe8a1;
+            border: #eea236 solid 2px
+        }
+        /*p:first-child {
+            color: red;
+            font-size: 2em;
+        }
+        p:first-of-type {
+            color: blue;
+            font-size: 2em;
+        }
+        span:first-of-type {
+            color: blue;
+            font-size: 2em;
+        }*/
+
+       /* p:only-child {
+            background-color: red;
+        }*/
+        /*p:nth-child(2) {
+            color: red;
+        }*/
+        div>p {
+            color: pink;
+        }
+        /*div+p {
+            color: #ff0099;
+        }*/
+        /*div p{
+            color: pink;
+        }*/
     </style>
 </head>
 <body>
+<!--:first-child伪标签的含义-->
+<!--<p>父元素下的第一个p</p>
+    <div>kk
+        <p>第一个p</p>
+        <p>2</p>
+        <div>
+            <p>div下的p</p>
+            <span>在div父元素下,我是第一个span类型的子元素</span>
+        </div>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div>
+    <div><p>第二组中的第一个p</p></div>-->
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <span><p>3</p></span>
+    </div>
+
+
 
 <div id="app">
+
+    <!--v-show命令的测试，只有输入框中输入了数据以后才可以隐藏提示语，与此同时提交数据按钮才会显示-->
+    <div style="color: red;" v-show="!textData">输入框中必须填入数据才能提交</div>
+    <textarea v-model="textData"></textarea>
+    <input type="button" value="submit data" v-show="textData"/>
+    
     <p>{{message}}</p>
     <span v-bind:title="title">将鼠标悬浮在我上面可以看到页面的加载时间哦</span>
    <div> <input v-model="message" /></div>
@@ -26,9 +86,16 @@
     <div style="background-color:slategray">在vue中注册组件<b>何为组件？相当于一个标签，使用注册的组件的名字就可以包含注册的内容</b></div>
 
     <p>父组件与子组件之间数据的传递：prop && event</p>
+    <p>你看不到我看不到我哈哈哈你猜我想打的是什么东西</p>
     <todo-list></todo-list>
+
+</div>
+<div id="rotal">
+        <h1>挂载到底是怎么一回事呀</h1>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script>
 
     //注册组件
@@ -36,9 +103,10 @@
         template: '<P>组件内容呀</P>'
     })
     var vm = new Vue({
-        el: '#app',
+        el: "#app",
         data: {
             message: 'hello Vue!',
+            textData: '',
             title: '页面加载日期是：'+ new Date().toLocaleString(),
             seen: 'true',
             list: [
@@ -54,6 +122,19 @@
         }
     });
 
+    //创建构造器，使用extend({})
+    var rotial = Vue.extend({
+        template: "<p>这是:{{firstname}}-{{lastName}}使用vue.extend()定义的一个子组件，看看效果如何..{{alias}}耶</p>",
+        data: function(){
+            return {
+                firstName: "tan",
+                lastName: "qingqing",
+                alias: "tqq"
+            }
+        }
+    });
+    //创建实例，并将内容挂载到元素上
+   new rotial().$mount("#rotal")
 </script>
 </body>
 </html>

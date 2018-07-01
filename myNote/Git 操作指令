@@ -15,7 +15,7 @@ git push -u origin master   将项目上传到远程仓库（如果出错，按�
 
 1、在本地将想要删除的文件删除
 2、编辑命令： git commit -a -m "A file was deleted"
-3、提交   git push
+3、提交   git push  //////git push --set-upstream origin master
 
 Question
 git commit -a -m "aa"与git commit -m "aa"的区别
@@ -26,7 +26,7 @@ git commit -a -m "aa"与git commit -m "aa"的区别
 
 2）Changes to be committed → 文件已缓存，这是下次提交的内容；
 
-3）Changes bu not updated → 文件被修改，但并没有添加到缓存区。
+3）Changes but not updated → 文件被修改，但并没有添加到缓存区。
 
 git commit -m ""  只会提交添加到缓存区的文件（只提交添加的）
 
@@ -39,3 +39,38 @@ git add .   -------将所有更改的文件添加到缓存区
 git commit -m "txt"  ------将缓存区的代码提交
 git pull ------这时候在下拉代码速度将会很快
 git push ------提交代码最后
+
+
+
+
+Git------Linux在2005年开发
+Github-------2008年上线
+关于Git相比SVN、CVS，其不需要联网的意思是指什么
+比较：
+Git                          SVN、CVS
+不需要联网                       联网
+分布式版本控制系统               集中式的版本控制系统
+分支管理
+
+名词解释：
+    集中式的版本控制系统----版本库是集中放在中央服务器上的，每个人工作的时候都需要把代码从中央服务器上拉下来。
+                            做完之后还得将代码发送到中央服务器上。由于所有代码都放在中央服务器上，所以当中央服务器
+                            掉的时候，所有代码都将丢失，将对所有人的工作都产生影响。集中式的版本控制也导致了联网的需求。
+    分布式的版本控制系统----每个人的电脑上都有一个完整的版本库。相对于集中式而言要安全。也因为每个人的电脑上那个都有一个
+                            版本库，一次可以不需要联网就能进行开发。。。
+
+在git bash安装成功后 。。先初始化个人信息。
+初始化命令：
+            git config --global user.name "your name"
+            git config --globle uesr.email "your email"
+            在这里使用了--global命令，意思是全局使用，也可以对某个仓库指定不一样的用户名和用户邮件
+       git status----命令告诉我们什么文件被修改了，但是具体修改了什么地方却没有说。。如果想看具体什么地方被修改，
+                    我们可以使用命名git diff 查看
+
+             commit-----也被叫做快照，用于记录提交历史
+             git log --pretty=oneline    使提交历史显示为一行
+             版本回退-----在git中 HEAD表示当前版本，HEAD^表示删一个版本，HEAD^^表示上上个版本，如果多的话也可以表示为HEAD~100
+             回退命令; git reset --hard HEAD^
+
+             git reflog------查看命令历史
+        暂存区的概念：

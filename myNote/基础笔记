@@ -27,7 +27,7 @@ var str = "women,people,test,hahha:shing,moment";
 6、字符串切割： slice()
 
 
-通过字符串来截取字段，如果字符串最后一个字符为符号的话--->存在问题获取到的数组将会得到一个空字段的数据。。那么该怎么忽略掉最后一个符号？
+通过字符串来截取字段，如果字符串最后一个字符为符号的话---存在问题获取到的数组将会得到一个空字段的数据。。那么该怎么忽略掉最后一个符号？
 例如：var data = "我们:你好;他们:再见;联系电话:1234567-7898;";
 
 一个字符串中既有分号也有冒号，通过符号截取函数split()来截取。。。
@@ -36,3 +36,268 @@ var str = "women,people,test,hahha:shing,moment";
     var daaRp =  data.replace(/:/g,";");
     -------最后对剩余的那个字符进行截取
     var daa = daaRp.split(";");
+
+
+-------JSON.stringify()
+-------将数据值转换为json字符串
+
+
+vue框架的学习以及项目的实现。。。直接用所学技术知识用到在journey项目上。。journey项目的重新构造。。定位功能保留
+
+
+sass使用$来定义变量
+$line: 21px;
+$attr: border;
+
+#{}-----可以在选择器或者属性名中使用变量
+div.#{$attr}: 20px red;-------div.border : 20px red;
+p {
+    line-height: #{$line}-----line-height: 21px;
+}
+
+@import   -----允许导入其他路径的sass文件。。只有在改文件名后缀为.sass时才能导入成功，否则就作为普通的css语句
+
+
+如果需要导入scss或者sass文件，但是不希望将其编译为css，只需要在文件名前添加下划线
+
+@extend   
+		-----将重复的样式延伸给需要包含给这个样式的特殊样式
+
+
+想解决的问题：
+------
+journey项目中的图片条功能的改进homepage.html文件navi6下
+怎么使用vue.js来绑定图片的路径，使用v-for 来显示图片。。需要注意的是显示的图片是有限的，要想显示其他的图片可以通过点击更多按钮来查看
+
+
+
+css中的单位vh和vw指的是：
+vh-----viewport  height -----视窗宽度   1vh==1%的视窗高度
+vw-----viewport  width ------视窗高度   1vw==1%的视窗宽度
+
+//2018/6/28 周四
+css中的单位
+em-------相当于当前字体尺寸的大小
+2em-------当前字体尺寸的两倍大小
+-----------在 CSS 中，em 是非常有用的单位，因为它可以自动适应用户所使用的字体。
+
+ex-------相当于当前字体尺寸的一半（x-height）
+
+css选择器
+p:first-child（相对于父元素的第一个子元素）
+----------相对于其父元素下第一个p,无论位置在哪。。每个父元素下的第一个p（父元素不包括body）
+
+p:first-of-type(该类型相对于父元素是第一个)
+---------选择属于其父元素的首个 <p> 类型元素的每个 <p> 元素.
+
+:first-child与first-of-type的差别在于：
+    -------前者要求不仅是符合条件的元素，还得是父元素的第一个子元素。此外，其父元素不包含<body>
+    ------后者不要求必须是父元素的第一个子元素，只要该类型相对于父元素而言是第一个就可以了。<body>下的第一个该类型的元素也符合条件
+
+========下标从1开始========
+:after    在该元素之后插入内容========
+                                     ||-----配合content属性来设定插入的内容.....p:after{content: "我们"}
+:before   在该元素之后插入内容========
+:first-line   在该元素的第一行
+:first-letter  在该元素的第一个单词
+:last-of-type:  与first-of-type类似。。类型相对于父元素而言是最后一个该类型的元素
+:only-of-type:   父元素下该类型的元素是唯一的一个元素，即父元素下只有一个该类型的子元素
+p:only-child:   选择属于其父元素的唯一子元素的每个 <p> 元素。
+p:nth-child(n)   父元素下的第n个元素且是p的所有p元素
+p:nth-last-child(n)   与nth-child(n)类似，只是从最后一个元素开始计数
+p:nth-of-type(n)    选择属于其父元素第二个 <p> 元素的每个 <p> 元素。
+p:nth-last-of-type(n)     同上。只是从最后一个元素开始计数
+p:last-child   选择属于其父元素最后一个子元素每个 <p> 元素。
+
+div>p           选择父元素为 <div> 元素的所有 <p> 元素。
+div p       	选择 <div> 元素内部的所有 <p> 元素
+div+p           选择紧接在 <div> 元素之后的所有 <p> 元素
+
+列表的样式设置
+list-style
+      ------list-style-image(将图像设置为列表标记) list-style-image: url()
+      -----list-style-position(设置列表标记的位置)  inside/outside/inherit
+      ------list-style-type(设置列表项标记的类型)  disc/circle/decimal/.....
+
+javascript的选择器
+
+子选择器
+E1>E2{}
+子对象选择器--第N个元素
+选择器：first-child{}
+
+选择器：
+	  p:nth-child(odd)----奇数p-----(下标从1开始)
+	  p:nth-child(even)---偶数p
+
+	  p:nth-of-type(n)------选择器匹配属于父元素的特定类型的第N个子元素的每个元素
+
+vue中的特殊属性   :key的使用
+
+2018/6/25   周一
+ES6新增的箭头函数： =>
+        x => x*x; 相当于  function(x){return x*x;}
+        箭头函数相当于匿名函数，并且可以省略掉{...}和return..当然，存在多条语句时就不可以省略了
+        箭头函数和匿名函数存在的区别在与this关键字的作用域。。箭头函数是语法作用域，由上下文确定。。
+        箭头函数的this实在定义函数是进行绑定，而不是执行的时候进行绑定的。。
+
+
+2018/6/26  周二
+javascript正则表达式
+
+
+    正则表达式的创建有两种方式：
+            字面量：var pattern = / pattern / flag;
+            字符串：var pattren1 = new RegExp(pattern,flag);
+
+    模板
+           var pattern = / pattern / flag;
+           var str = "moment,comment,test,pest,just,command";
+           var arr = pattern.exec(str);
+           var b = pattern.text(str);
+
+    flag关键字主要有(可以同时存在多个)
+            i(ignoreCase)------忽略大小写
+            g(globle)------全局搜索
+            m(multiline)----多行搜索
+            l(lastIndex)----下一个匹配项的开始位置，从0开始
+            s(source)-----正则表达式的字符串表达
+
+    匹配的方法主要有
+            test()------用于检测一个字符串是否匹配某个模式，如果存在，则返回true;否则，返回false
+            exec()------用于检索字符串中的正则表达式的匹配。该函数返回一个数组。。如果没有，则返回null
+
+            tolocalString()、toString()------将字面量转换成字符串格式
+            valueOf()------返回字面量格式
+
+    表达式模式
+           方括号 []-----用于匹配某个范围内的字符
+                    -----[abc]括号内的任意一个字符
+                    -----[0-9]0-9的任意一个字符
+                    -----[^bc]非bc
+                    -----[a-z && [^bc]]----除bc外的a-z的字符
+
+           量词
+                n+------一个或多个（至少一个）
+                n*------0个或多个(任意个)
+                n?------0个或一个（至多一个）
+
+           静态属性
+                $_
+                $*
+
+            RegExp的方法：
+                match()
+                split()
+
+
+
+
+
+2018/6/27  周三
+HTML文件头里的meta标签
+    <meta> 标签位于文档的头部，不包含任何内容。<meta> 标签的属性定义了与文档相关联的名称/值对
+    <meta>标签为mataData标签-----元数据。。翻译过来就是描述数据的数据
+    参考网址：  https://www.cnblogs.com/wangyang108/p/5995379.html
+
+    meta标签共两个属性： name 、http-equiv
+
+        1、name属性
+            -----<mate name="参数" content="参数对应的属性值">
+            参数有一下几种
+                keywords
+                    ------网页关键字
+                description
+                    ------网页内容的描述
+                viewport
+                    ------
+                robots
+                    ----定义搜索引擎的爬虫的索引方式
+                author
+                generator
+                    -----网页制作软件
+                copyright
+                revisit-after
+                    ------搜索引擎爬虫重访时间
+                renderer
+                    ------为双核浏览器准备。用于指定双核浏览器默认一何种方式渲染页面，比如webkit
+                    -------（一般的双核浏览器包括IE浏览器和非IE浏览器）
+                    ------<meta name=renderer content=webkit>
+                format-detection
+                    ------该标签用于指定是否将网页内容中的手机号显示为拨号的超链接
+                    ------在iphone手机默认为yes，如果不想，可设置为如下
+                    -------<meta name=format-detection content="telephone=no">
+                referer
+                    -------referer策略，暂时不了解有什么用
+                    -------  <meta name="referrer" content="always">
+        2、http-equiv
+            -------<meat http-equiv="参数" content="具体的描述" >
+            参数有一下几种
+            content-type
+                -------用于设定网页字符集，便于浏览器解析和渲染页面
+                -------<meta http-equiv="content-type" content="text/html;charset=utf-8">  (旧的浏览器的写法)
+                -------<meta charset="utf-8">  (html5页面设定的设置方式)
+            cache-control
+                -------指定请求和相应遵循的缓存机制
+                -------<meta http-equiv=Cache-Control content=no-siteapp>
+                -------no-cache: 先发送请求，与服务器确认该资源是否被更改，如果未被更改，则使用缓存。
+                       no-siteapp：  禁止百度转码
+                       no-store: 不允许缓存，每次都要去服务器上，下载完整的响应。（安全措施）
+                       public : 缓存所有响应，但并非必须。因为max-age也可以做到相同效果
+                       private : 只为单个用户缓存，因此不允许任何中继进行缓存。（比如说CDN就不允许缓存private的响应）
+                       maxage : 表示当前请求开始，该响应在多久内能被缓存和重用，而不去服务器重新请求。例如：max-age=60表示响应可以再缓存和重用 60 秒。
+            expires
+                ------网页到期时间。。用于设定网页的到期时间，过期后网页必须到服务器上重新传输
+            refresh
+                ------自动刷新并指向某个页面
+            Set-Cookie
+                --------cookie设定
+             X-UA-Compatible
+                ---------针对IE浏览器设定的
+                ---------<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+Vue插件之element-ui
+关于插件中响应式布局的理解：
+    不同的样式可以根据页面的大小来决定是否显示
+    比如响应式样式中很多都是xs、sm、md、lg、lx这样的样式，设置了xs样式的元素，只有在界面大小极小的情况下才会显示该元素，
+    当界面增大时，不满足该样式的显示要求的时候，该样式的元素将不会再显示。
+
+Layout布局
+    <el-row>
+       <el-col></el-col>
+    </el-row>
+
+container容器
+    <el-container>----外层容器
+    <el-header>-------顶栏容器
+    <el-aside>--------侧边栏容器
+    <el-main>---------主要区域容器
+    <el-footer>-------底栏容器
+
+Icon图标
+    <i class="el-icon-edit"></i>
+Button
+    通过tyep..plain..round..circle等属性来设置其样式
+    <el-button></el-button>
+Radio
+    radio的使用需要用v-model进行绑定，以表示他是否被选中
+    <el-radio></el-radio>
+    <el-radio-group>
+Checkbox多选框
+    使用v-model绑定变量
+    <el-checkbox v-model="checked">备选项</el-checkbox>
+    <el-checkbox>
+input
+    <el-input>
+inpputNumber
+    <el-input-number>
+select  选择器
+    <el-select>
+
+
+Echart.js-----------图表绘制框架
+
+
+关于vue的组件传值
+prop
