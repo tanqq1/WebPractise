@@ -73,7 +73,12 @@
     <div style="color: red;" v-show="!textData">输入框中必须填入数据才能提交</div>
     <textarea v-model="textData"></textarea>
     <input type="button" value="submit data" v-show="textData"/>
-    
+
+    <!--组件的使用-->
+        <counter heading="likes" color="green"></counter>
+        <counter heading="Dislikes" color="red"></counter>
+
+<!--    &lt;!&ndash;组件的使用&ndash;&gt;
     <p>{{message}}</p>
     <span v-bind:title="title">将鼠标悬浮在我上面可以看到页面的加载时间哦</span>
    <div> <input v-model="message" /></div>
@@ -87,9 +92,14 @@
 
     <p>父组件与子组件之间数据的传递：prop && event</p>
     <p>你看不到我看不到我哈哈哈你猜我想打的是什么东西</p>
-    <todo-list></todo-list>
+    <todo-list></todo-list>-->
 
 </div>
+
+<template id="counter-template">
+    <h1>{{heading}}</h1>
+    <button style='background-color: red' @click="count += 1">{{ count }}</button>
+</template>
 <div id="rotal">
         <h1>挂载到底是怎么一回事呀</h1>
 </div>
@@ -98,10 +108,17 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script>
 
-    //注册组件
-    Vue.component('todo-list',{
-        template: '<P>组件内容呀</P>'
+    vue.component('counter',{
+        template: '#counter-template',
+        prop: ['heading','color'],
+        data: function(){
+            return { count: 0 }
+        }
     })
+    //注册组件
+  /*  Vue.component('todo-list',{
+        template: '<P>组件内容呀</P>'
+    })*/
     var vm = new Vue({
         el: "#app",
         data: {
@@ -123,7 +140,7 @@
     });
 
     //创建构造器，使用extend({})
-    var rotial = Vue.extend({
+   /* var rotial = Vue.extend({
         template: "<p>这是:{{firstname}}-{{lastName}}使用vue.extend()定义的一个子组件，看看效果如何..{{alias}}耶</p>",
         data: function(){
             return {
@@ -134,7 +151,7 @@
         }
     });
     //创建实例，并将内容挂载到元素上
-   new rotial().$mount("#rotal")
+   new rotial().$mount("#rotal")*/
 </script>
 </body>
 </html>
