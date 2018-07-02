@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue相关指令演示</title>
+</head>
+<body>
+<div id="app">
+
+    <!--v-show命令的测试，只有输入框中输入了数据以后才可以隐藏提示语，与此同时提交数据按钮才会显示-->
+    <!--v-show-->
+    <!--v-if-->
+    <!--v-model-->
+    <div style="color: red;" v-show="!textData">输入框中必须填入数据才能提交</div>
+    <textarea v-model="textData"></textarea>
+    <input type="button" value="submit data" v-show="textData"/>
+    <div style="color: #ff66ee;" v-if="!textData">输入框中必须填入数据才能提交</div>
+
+    <!--事件-->
+    <!--表单，提交数据-->
+    <!--<form action="demo.html" @submit.prevent="submitform">-->
+    <form action="demo.html" @submit="submitform">
+        <button type="submit">submit</button>
+    </form>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    var vm  = new Vue({
+        el: '#app',
+        data: {
+            textData: ''
+        },
+        methods: {
+            submitform: function(){
+                alert("Submit");
+                //阻止提交事件的默认动作
+                // e.preventDefault()
+            }
+        }
+    });
+</script>
+</body>
+</html>

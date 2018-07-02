@@ -299,5 +299,13 @@ select  选择器
 Echart.js-----------图表绘制框架
 
 
+
+2018/7/2  周一
+关于方法：
+    -----其中e(event),通知web浏览器不要执行与事件相关联的动作，比如阻止表单提交数据
+    -----e.preventDefault()-----在某个方法中调用
+    ------也可以直接在事件后面调用属性prevent
+    ------@submit.prevent
+    ------比如一个button放在一个form中，这个button的Default就是提交（submit），但如果你不想让他提交，就可以用e.preventDefault();
 关于vue的组件传值
 prop
