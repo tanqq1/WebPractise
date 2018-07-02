@@ -53,10 +53,17 @@ vue指令
                     -----<textarea>
         v-on
 
+-------------2018/7/2
      |--------v-show，相当于display:none/block..元素所占空间一直存在
      |
      |--------v-if，当条件不成立时元素所占空间将取消
 
+     v-for
+        v-for 指令的操作对象有四种，分别是：Array|Object|Number|String
+        v-for指令可以传入是三个参数。（value，key,index）
+
+
+2018/7/2---------
 自定义指令
         有时候我们需要实现现有指令无法实现的功能，这时我们就可以通过自定义指令来实现功能
         全局注册
@@ -284,10 +291,14 @@ vue多页面之间怎么进行联系。。。
            }),
        filename引用的是\config\index.js里的build，每个页面都要配置一个chunks，不然会加载所有页面的资源。
 
-
+2018/7/2   周一
+vue通过路由来获取url中的参数;
+    this.$route.query
+对获取到的数据进行解码
+    decodeURI(参数)----解码
+    encodeURI(参数)----加密
 
 question:
-
 1 、组件中props传值、样式绑定怎么绑定，颜色值通过props传递???????????
 
 

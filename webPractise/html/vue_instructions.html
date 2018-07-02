@@ -11,17 +11,45 @@
     <!--v-show-->
     <!--v-if-->
     <!--v-model-->
-    <div style="color: red;" v-show="!textData">输入框中必须填入数据才能提交</div>
-    <textarea v-model="textData"></textarea>
-    <input type="button" value="submit data" v-show="textData"/>
-    <div style="color: #ff66ee;" v-if="!textData">输入框中必须填入数据才能提交</div>
-
+    <div>
+        <div style="color: red;" v-show="!textData">输入框中必须填入数据才能提交</div>
+        <textarea v-model="textData"></textarea>
+        <input type="button" value="submit data" v-show="textData"/>
+        <div style="color: #ff66ee;" v-if="!textData">输入框中必须填入数据才能提交</div>
+    </div>
     <!--事件-->
     <!--表单，提交数据-->
     <!--<form action="demo.html" @submit.prevent="submitform">-->
     <form action="demo.html" @submit="submitform">
         <button type="submit">submit</button>
     </form>
+
+    <!--v-text-->
+    <!--v-html-->
+    <div>
+        <div v-text="msg"></div>
+        <div v-html="msg1"></div>
+    </div>
+
+    <!--v-for-----操作对象包括Array|Object|Number|String-->
+    <!--:key有什么用处？？？？-->
+    <div>
+       <div style="border: black solid 1px; margin-top: 2px;">
+           <div v-for="(arr,index) in arrs">{{ index }}----{{ arr }}</div>
+       </div>
+        <div style="border: red solid 1px; margin-top: 2px;">
+           <div v-for="(value,key,index) in objs">{{ index }}---{{ key }}:{{ value }}</div>
+       </div>
+        <div style="border: black solid 1px; margin-top: 2px;">
+            <div v-for="(str,index) in strs">{{ index }}---{{ str }}</div>
+        </div>
+        <div style="border: red solid 1px; margin-top: 2px;">
+            <div v-for="n in 10" :key="n.id">{{ n }}</div>
+        </div>
+    </div>
+    <!--v-bind-->
+    <!--class与style的绑定-->
+    <div></div>
 </div>
 
 <script src="../js/vue.js"></script>
@@ -29,7 +57,15 @@
     var vm  = new Vue({
         el: '#app',
         data: {
-            textData: ''
+            textData: '',
+            msg: 'v-text的使用',
+            msg1: 'v-html的使用',
+            arrs: ['Array 1','Array 2','Array 3'],
+            objs: {
+                firstName:'test1',
+                secondName:'test2'
+            },
+            strs: 'who we are?'
         },
         methods: {
             submitform: function(){
