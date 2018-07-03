@@ -111,7 +111,7 @@ p:last-child   选择属于其父元素最后一个子元素每个 <p> 元素。
 
 div>p           选择父元素为 <div> 元素的所有 <p> 元素。
 div p       	选择 <div> 元素内部的所有 <p> 元素
-div+p           选择紧接在 <div> 元素之后的所有 <p> 元素
+div+p           选择紧接在 <div> 元素之后的所有 <p> 元素。。。<div>与p标签之间是兄弟标签关系，而且仅仅是邻接的
 
 列表的样式设置
 list-style
@@ -310,3 +310,18 @@ Echart.js-----------图表绘制框架
     ------比如一个button放在一个form中，这个button的Default就是提交（submit），但如果你不想让他提交，就可以用e.preventDefault();
 关于vue的组件传值
 prop
+
+
+2018/7/3  周二
+css3
+
+background-size属性
+background-size: length | percentage| cover | contain
+
+text-overflow属性
+        （文本过长），文本溢出包含元素时
+        text-overflow: clip | ellipsis | string
+        默认值clip,溢出的文本将直接被剪掉
+        ellipsis,溢出的文本将使用省略号来替代
+        string，使用给定的字符串来替换溢出的文本
+

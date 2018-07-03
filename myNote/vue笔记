@@ -242,7 +242,6 @@ router.go(n)
     <router-view ></router-view>
     <router-view name='b '></router-view>
     <router-view name='c '></router-view>
-
     var router = new VueRouter({
         routers: [{
             path: '/',
@@ -301,10 +300,52 @@ vue通过路由来获取url中的参数;
 question:
 1 、组件中props传值、样式绑定怎么绑定，颜色值通过props传递???????????
 
+2018/7/3
+vue外部模板的定义方式：
+<div id='app'>
+    <counter heading='likes' color='green'></counter>
+    <counter heading='dislikes' color='red'></counter>
+</div>
+
+<script type="text/x-template" id="counter-template">
+    <div>
+        <h1>{{heading}}</h1>
+        <button v-bind:style="{'background-color': color}" @click="count += 1">{{ count }}</button>
+    </div>
+</script>
+
+<script>
+    Vue.component('counter',{
+        template: '#counter-template',
+        data: function(){
+            return { count: 0 }
+        },
+        props: {
+            heading: '',
+            color: ''
+        }
+    })
+
+    var vm  =  new Vue({
+        el: '#app'
+    })
+</script>
+
+关于vue中的计算属性
+computed------Object,
+
+组件化概念的理解
+       对于重复用到的部分代码，给他封装成组件的话就可以精简代码数量，使代码更加的简洁
 
 
-
-
+        vue中的components-----Object
+         import a from '.....'
+         var vm  = new Vue({
+            el: '#app',
+            components: {
+                'a': a
+            }
+         })
 
 
 

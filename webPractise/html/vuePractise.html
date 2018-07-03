@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
     <title>vue 熟悉测试</title>
 
     <style>
@@ -29,8 +29,10 @@
 
     <!--组件的使用-->
     <p>{{message}}</p>
-    <span v-bind:title="title">将鼠标悬浮在我上面可以看到页面的加载时间哦</span>
+    <span :title="title">将鼠标悬浮在我上面可以看到页面的加载时间哦</span>
    <div> <input v-model="message" /></div>
+    <input v-model="name"/>
+    <p>{{merge_data}}</p>
     <div><button @click="show">{{message}}</button></div>
     <ul>
         <li v-for="s in list">
@@ -45,20 +47,23 @@
 
 </div>
 
-<!--<template id="counter-template">
-    <h1>{{heading}}</h1>
-    <button style='background-color: red' @click="count += 1">{{ count }}</button>
-</template>-->
-
 <div id="rotal">
         <h1>挂载到底是怎么一回事呀</h1>
 </div>
 <script src="../js/vue.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+//定义模板的方式
+<script type="text/x-template" id="counter-template">
+    <div>
+        <h1>{{heading}}</h1>
+        <button :style="{'background-color': color}" @click="count += 1">{{ count }}</button>
+    </div>
+</script>
+
 <script>
     Vue.component('counter',{
-        template: '<div><h1>{{heading}}</h1>\n' +
-        '    <button style=\'background-color: pink\' @click="count += 1">{{ count }}</button></div>',
+        template: '#counter-template',
         data: function(){
             return { count: 0 }
         },
@@ -78,6 +83,7 @@
             textData: '',
             title: '页面加载日期是：'+ new Date().toLocaleString(),
             seen: 'true',
+            name: 'tang',
             list: [
                 {data: '数据一'},
                 {data: '数据二'},
@@ -87,6 +93,11 @@
         methods: {
             show: function(){
                 this.message = "我们不一样"
+            }
+        },
+        computed: {
+            merge_data: function(){
+                return this.name+ ''+ this.message;
             }
         }
     });
