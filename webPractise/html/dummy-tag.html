@@ -23,19 +23,27 @@
 
         /* p:only-child {
              background-color: red;
-         }*/
-        /*p:nth-child(2) {
+         }
+        p:nth-child(2) {
             color: red;
-        }*/
-        /*div>p {
-            color: pink;
-        }*/
-        div+p {
-            color: #ff0099;
         }
-        /*div p{
+        div>p {
             color: pink;
         }*/
+        /*div+p {
+            color: #ff0099;
+        }*/
+        div p{
+            color: #0bb;
+        }
+        img {
+            width: 30%;
+        }
+        span:after {
+            content: "我是span标签后面的after标签";
+            font-size: 20px;
+            color: #4cae4c;
+        }
     </style>
 
 </head>
@@ -67,8 +75,8 @@ p:first-of-type(该类型相对于父元素是第一个)
     p:last-child   选择属于其父元素最后一个子元素每个 <p> 元素。
 
     div>p           选择父元素为 <div> 元素的所有 <p> 元素。
-    div p       	选择 <div> 元素内部的所有 <p> 元素
-    div+p           选择紧接在 <div> 元素之后的所有 <p> 元素-。。。<div>与p标签之间是兄弟标签关系，而且仅仅是邻接的->
+    div p       	选择 <div> 元素内部的所有 <p> 元素。。即使是<div>下非<div>子标签下的p
+    div+p           选择紧接在 <div> 元素之后的所有 <p> 元素-。。。<div>与p标签之间是兄弟标签关系，而且仅仅是邻接的-->
 <p>父元素下的第一个p</p>
 <div>kk
     <p>第一个p</p>
@@ -88,5 +96,6 @@ p:first-of-type(该类型相对于父元素是第一个)
     <p>2</p>
     <span><p>3</p></span>
 </div>
+<img src="../img/a7.jpg" >
 </body>
 </html>

@@ -118,7 +118,7 @@ vue指令
     父子组件之间的传值主要为prop、event
     组件之间传值的方式有
 
-        1、通过路由待参数进行传值
+        1、通过路由带参数进行传值
         2、通过sessionStorage缓存的形式 来进行数据传递
         3、父组件像子组件传值： props
         4、子组件像父组件传值： emit
@@ -297,8 +297,7 @@ vue通过路由来获取url中的参数;
     decodeURI(参数)----解码
     encodeURI(参数)----加密
 
-question:
-1 、组件中props传值、样式绑定怎么绑定，颜色值通过props传递???????????
+
 
 2018/7/3
 vue外部模板的定义方式：
@@ -307,6 +306,8 @@ vue外部模板的定义方式：
     <counter heading='dislikes' color='red'></counter>
 </div>
 
+
+//模板定义时，如果存在多个标签。最好将所有的标签包含在一个div块中，否则模板可能会出现不完整的情况
 <script type="text/x-template" id="counter-template">
     <div>
         <h1>{{heading}}</h1>
