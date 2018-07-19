@@ -326,5 +326,44 @@ text-overflow属性
         string，使用给定的字符串来替换溢出的文本
 
 
-2018/7/4  周三
-今天基本没敲代码，主要看了一遍vant----vue的UI框架
+2018/7/19  周四
+    /* 当数字长度过长时，每隔三位添加一个分割符。例如： 34567---》34,567*/
+      formatNumber(num) {
+        let str = (num || 0).toString()   /将数据转化成字符串，方便之后对数据进行字符串操作
+        let result = ''
+        while (str.length > 3) {
+          result = ',' + str.slice(-3) + result
+          str = str.slice(0, str.length - 3)
+        }
+        if (str) { result = str + result }
+        return result
+      },
+
+      用到的数组的方法：
+      unshift()------将数据放到数组的第一位（用于将数据中的数据位置置换）
+      push()------将数据放到数组的最后一位
+
+      将时间格式化
+      //2018-07-19
+       formatDT(value) {
+              let date = new Date(value)
+              let y = date.getFullYear()
+              let m = date.getMonth() + 1
+              m = m < 10 ? ('0' + m) : m
+              let d = date.getDate()
+              d = d < 10 ? ('0' + d) : d
+              let dataTime = y + '-' + m + '-' + d
+              return dataTime
+            }
+      获取近几天的时间。结束时间为当前最新时间
+       selectdate(key) {
+              //this.time = ''
+              //this.optTime = key
+              let nowDate = Date.parse(new Date())       //将时间格式转化为ms
+              let sTime = nowDate - ((key - 1) * 24 * 60 * 60 * 1000)
+              this.startTime = this.formatDT(sTime)
+              this.endTime = this.formatDT(new Date())
+              this.reuseName = []
+              this.reuseNum = []
+              this.getData()
+            },

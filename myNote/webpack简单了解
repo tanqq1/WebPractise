@@ -1,0 +1,29 @@
+babel是一个编译javascript的平台
+
+webpack提供两个工具处理样式表，css-loader 和 style-loader，二者处理的任务不同，css-loader使你能够使用类似@import
+ 和 url(...)的方法实现 require()的功能,style-loader将所有的计算后的样式加入页面中，二者组合在一起使你能够把样式表嵌入
+ webpack打包后的JS文件中。
+
+
+webpack中的
+        css-loader、style-loader
+        css-loader:该工具可以实现使用@import和url(...)的方法实现require()的功能
+        style-loader: 该工具将所以计算后的样式加入到页面中
+        ---------这两个工具的使用可以使我们在样式表嵌入到webpack打包后的js文件中
+
+
+ window.location属性下的各个对象的含义方法有：
+        window.Location {
+            replace: ƒ(),
+            assign: ƒ(),
+             href: "https://youzan.github.io/vant/#/zh-CN/card",
+             host: "youzan.github.io",--------获取当前url的主机名
+             hash: "#/zh-CN/card",------返回url中代表页面某个区域的带有#的字符串
+             hostname: "youzan.github.io",  --------返回url的路径字符串
+              origin: "https://youzan.github.io",-----------返回url中完整的协议和主机地址部分,包括端口
+              pathname:"/vant/",
+              port: "",
+              protocol: "https"-------当前url所使用的协议
+              string()-----Location.toString()
+                           获取当前页面的完整URL，相当于location.href
+              }

@@ -74,3 +74,13 @@ Git                          SVN、CVS
 
              git reflog------查看命令历史
         暂存区的概念：
+
+   2018/7/5
+
+   git branch    ------查看当前目录下的分支
+   git branch -a  --------查看远程目录下的分支
+   git checkout  分支名   --------切换到相应的分支下
+
+   cnpm i  -------安装package.json下的依赖
+
+

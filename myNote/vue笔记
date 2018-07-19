@@ -350,6 +350,115 @@ computed------Object,
 
 
 
+在echart的使用中用到的属性：
+
+title  -------图表的标题，可以设置标题的字体样式
+series ------系列列表 （列表图形样式的设置，比如条形图上的条的宽度，边距，颜色，标签/饼图样式等）
+xAixs  ------x轴的设置  （直角坐标系上的x轴，可以对x轴的刻度线，x轴标签等的显示进行单独的设置、还有标签样式、位置、标签距离
+                          轴线的距离、轴线是否反向）
+yAixs ------y轴的设置  （同x轴）
+grid  -----直角坐标系里绘制网格。。可以通过设置网格来实现图的边距的设置
+legend  ---图例组件展现了不同系列的标记(symbol)，颜色和名字。可以通过点击图例控制哪些系列不显示（也就是边上的小方块标记）
+
+   this.vBar.setOption({
+          title: {
+            text: '接口调用次数排行榜',
+            x: 'center',
+            textStyle: {
+              fontSize: 15
+            }
+          },
+          series: [
+            {
+              show: true,
+              type: 'bar',
+              barWidth: 30, // 统计条宽度
+              barMinHeight: 10,
+              barGap: '-100%',   不同系列间的柱间距离，如果想要柱重叠，可以设置-100%。。一般用于阴影效果设置
+              legendHoverLink: false, // 不启用hover时的联动高亮。。默认true
+              /* emphasis: {// 点击灰色进度条时高亮显示颜色
+                itemStyle: {
+                  color: '#a7a7a7'
+                }
+              },*/
+              itemStyle: {
+                normal: {
+                  color: '#F5F5F5',
+                  barBorderRadius: [2, 2, 0, 0]
+                }
+              },
+              z: 1,
+              data: _this.reuseBgNum
+            },
+            {
+              itemStyle: {       //设置条形图条的颜色
+                color: function(params) {
+                  var colorList = [
+                    '#FDA134',
+                    '#5ACDA3',
+                    '#D299F3',
+                    '#7297E7'
+                  ]
+                  return colorList[params.dataIndex]
+                }
+              },
+              label: {     //标签的设置
+                normal: {
+                  position: [this.vWidth, 10],   //设置标签显示的位置
+                  show: true,
+                  color: '#333C5C'
+                }
+              },
+              type: 'bar',
+              barWidth: 30,
+              barMinHeight: 10,
+              barGap: '-100%',
+              z: 3,
+              data: _this.reuseNum
+            }
+          ],
+          color: ['#5ACDA3'],
+          grid: {
+            left: '5%',
+            right: '10%',
+            bottom: '5%',
+            top: '17%',
+            containLabel: true,
+            borderColor: '#FFF'
+          },
+          xAxis: [{
+            show: false,
+            type: 'value',
+            minInterval: 1,
+            maxInterval: 1000,
+            boundaryGap: [0, 1],
+            position: 'top',
+            splitLine: false,
+            axisTick: {
+              show: false
+            }
+          }],
+          yAxis: [
+            {
+              type: 'category',
+              data: this.reuseName,
+              show: true,
+              inverse: true, // 使坐标轴反向
+              splitLine: false,
+              axisLine: {
+                show: false
+              },
+              axisLabel: {
+                show: true
+              },
+              axisTick: {
+                show: false
+              }
+            }
+          ]
+        })
+
+
 
 
 
