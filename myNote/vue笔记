@@ -221,6 +221,7 @@ router.push(location,onComplete?,onAbort?)
         -----------//如果有路径，提供的params会被忽略
         -----------// 这里的 params 不生效
         -----------router.push({ path: '/user', params: { userId }}) // -> /user
+                this.$router.push({path: ''})
         -----------//带查询参数。。。/register?plan=private
         -----------router.push({ path: 'register', query: { plan: 'private' }})
 
