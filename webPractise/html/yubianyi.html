@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 语法练习</title>
+    <script>
+       /* hello();    //hello world
+        function hello(){
+            console.log("hello");
+        }
+        function hello(){
+            console.log("hello world")
+        }
+        hello();      //hello world
+
+        var f = function(){
+            console.log(1);
+        };
+        f();
+
+        var message = "hello";
+        if(message){
+            // console.log("Value is true")
+            console.log("Value is true")
+        }
+*/
+       // 一道面试题
+       function fun(n,o){
+           console.log(o);
+           return {
+               fun: function(m){
+                   return fun(m,n);
+               }
+           }
+       }
+       var a = fun(0);   //在这一步就已经调用了fun(0,undefined),所以先打印undefined
+       a.fun(1);     //这一步执行 fun(1,0),console.log(0)
+       a.fun(2);//同上
+       a.fun(3);
+       // end面试题
+
+        //按块执行javascript代码
+
+        //作用域
+
+        //javascript的定义域及定义域提升
+
+        //对象的toString()
+        var a = new Object();
+        a.name = "tanqq";
+        a.age="23";
+        console.log(a.valueOf());
+    </script>
+</head>
+<body>
+<h1>双向绑定的简单实现</h1>
+<input type="text" id="a"/>
+<span id="b"></span>
+<div style="background-color: #00bbbb;display: flex;height: 100px">hahha</div>
+<script>
+   /* var obj = {};
+    Object.defineProperty(obj,'hello',{
+        set: function(newVal){
+            document.getElementById('a').value = newVal;
+            document.getElementById('b').innerHTML = newVal;
+        }
+    });
+    document.addEventListener('keyup',function(e){
+        obj.hello = e.target.value;
+    });*/
+
+    //ES5语法解析
+
+    //forEach的使用..forEach方法中的function回调支持3个参数，
+    // 第1个是遍历的数组内容；第2个是对应的数组索引，第3个是数组本身
+   /* var arr = [1,2,3,4,2,8,0,2];
+    // arr.forEach(console.log)
+    var t = arr.indexOf(2);
+    console.log('kk---'+t);*/
+</script>
+</body>
+</html>

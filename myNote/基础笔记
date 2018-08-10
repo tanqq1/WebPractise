@@ -1,3 +1,11 @@
+2018-8-6周一
+当前主流浏览器的内核及其浏览器代表（https://blog.csdn.net/beyondhaven/article/details/6753834）
+
+一、Trident内核，代表产品Internet Explorer
+二、Gecko内核，代表作品Mozilla Firefox
+三、WebKit内核，代表作品Safari、Chrome
+四、Presto内核，代表作品Opera
+
 对字符串的操作
 var str = "women,people,test,hahha:shing,moment";
 
