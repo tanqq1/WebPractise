@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>javascript之正则表达式</title>
+</head>
+<body>
+<h1>笔记</h1>
+<div style="color: chartreuse">
+    javascript之正则表达式
+    正则表达式的表达形式有两种：字面量形式、字符串形式
+    字面量形式
+    var pattern = /pattern/flags;
+    字符串形式：
+    var pattern1 = new RegExp("pattern","i");
+    由flags可知，一个正则表达式可以带一个或多个标志
+    正则表达式的标志有：
+    g(global):全局模式
+    i(ignoreCase)：忽略大小模式
+    m(multiline): 多行模式
+
+    在模式中使用元字符时需要进行转义，元字符主要如下（括号、模式中用到的特殊字符）：
+    ( [ { \ ^ $ | ) ? * + .　］｝
+
+    模式中用到的特殊字符及其含义
+
+    正则表达式中的方法
+    regObj.test(strObj)//返回布尔值，如果有则返回true
+    regObj.exec(strObj)
+    ()表示捕获型分组，可以将匹配的字符串进行分组，提取子串。
+    如果正则表达式中定义了组，就可以在RegExp对象上用exec()方法提取出子串来。
+    exec()匹配成功后，返回一个Array，第一个元素是正则表达式匹配到的整个字符串，后面的字符串表示匹配成功的子串。
+    exec()匹配失败时返回null。
+    strObj.search(regObj) //search(),忽略全局搜索
+    strObj.match(regObj) //match(),匹配符合的项，是否全局搜索会有不同
+    strObj.replace(regObj,replaceStr)  //替换
+</div>
+<script>
+    var string = "this is a teSt for Pattern是 不no 是yes yeah呀!";
+    var pattern = /[a-zA-Z]+/g;  //由一个或多个英文字符串组成的字符串（全局搜索）
+    var execPattern = /([a-zA-Z]{3})([a-z]?)/;
+    var t = pattern.test(string);
+    // var e = pattern.exec(string);
+    var ep = execPattern.exec(string);
+    var s = string.search(pattern);  //
+    var m = string.match(pattern);  //匹配字符串中的所有英文字符串
+    var r = string.replace(pattern,"谭");
+    console.log("原String字符串---"+string);
+    console.log("exec()---"+ep);
+    console.log("test()---"+t);
+    console.log("seach----"+ s);
+    console.log("match----"+ m);
+    console.log("replace----"+ r);
+</script>
+</body>
+</html>

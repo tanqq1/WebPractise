@@ -27,29 +27,25 @@
         }
     </style>
     <script>
-
-        //如何将一个字符串完全倒过来
-        function reverseStr(str){
-            var len = str.length;
-            var reStr = "";
-            for(var i = len-1;i>=0; i--){
-                reStr = reStr + str[i];
-            }
-            // console.log(reStr);
-            return reStr;
-        };
-        function noRepeat(arr){
-            var onlyArr = [];
-            for(var i = 0;i< arr.length - 1;i++){
-                if(onlyArr.indexOf(arr[i]) == -1){
-                    onlyArr.push(arr[i]);
-                }
-            }
-            // console.log(onlyArr);
-            return onlyArr;
+        //原型链
+        function superType(){
+            this.colors = ["red","blue","pink"];
         }
-        var arr = [1,3,5,6,8,0,1,4];
-        noRepeat(arr)
+        function subType(){}
+        subType.prototype = new superType();
+        var instance = new subType();
+        instance.colors.push("black");
+        console.log(instance.colors);
+        var instance2 = new subType();
+        console.log(instance2.colors);
+        var superInstance = new superType();
+        console.log(superInstance.colors);
+
+        function add(num1,num2){
+            sum = num1+num2;
+        }
+        add(10,30);
+        alert(sum);
         //对象的定义方式之一
         //之二： var obj  =new Object()
 /*
